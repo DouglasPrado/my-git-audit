@@ -38,7 +38,10 @@ export function BalanceBar({
                   animate && 'bar-grow',
                   s.kind === 'earned' && 'bg-credit',
                   s.kind === 'forgone' && 'hatch',
-                  s.kind === 'bonus' && 'bg-signal',
+                  // Âmbar, não `signal`: nesta paleta o token de sinal é o mesmo
+                  // verde da marca, e o bônus ficava indistinguível do adquirido.
+                  // Cor aqui carrega significado — some o significado, some a cor.
+                  s.kind === 'bonus' && 'bg-warn',
                   s.kind === 'penalty' && 'bg-debit',
                   s.kind === 'capped' && 'bg-debit-soft',
                 )}

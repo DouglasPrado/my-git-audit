@@ -64,7 +64,7 @@ export function Ledger({ rows, animate = true }: { rows: CategoryRow[]; animate?
               type="button"
               onClick={() => setOpen(isOpen ? null : row.category)}
               aria-expanded={isOpen}
-              className="group grid w-full grid-cols-[1fr_auto] items-center gap-x-5 gap-y-2 py-4 text-left sm:grid-cols-[15rem_1fr_auto]"
+              className="group grid w-full grid-cols-[1fr_auto] items-center gap-x-5 gap-y-2 py-4 text-left sm:grid-cols-[18rem_1fr_auto]"
             >
               <span className="flex items-baseline gap-2">
                 <span className="text-[0.9375rem] font-medium">{row.label}</span>
@@ -93,13 +93,13 @@ export function Ledger({ rows, animate = true }: { rows: CategoryRow[]; animate?
                   {row.contributions.map((c, i) => (
                     <div
                       key={`${c.label}-${i}`}
-                      className="grid grid-cols-[4.5rem_1fr] items-baseline gap-3 border-b border-rule/50 py-1.5 last:border-0"
+                      className="grid grid-cols-[4.5rem_1fr] items-baseline gap-3 border-b border-rule py-1.5 last:border-0"
                     >
                       <dt
                         className={cn(
                           'text-right',
                           c.points >= 0 ? 'text-credit' : 'text-debit',
-                          c.kind === 'bonus' && 'text-signal',
+                          c.kind === 'bonus' && 'text-warn',
                         )}
                       >
                         <Figure value={c.points} decimals={1} sign />

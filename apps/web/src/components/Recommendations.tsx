@@ -43,7 +43,7 @@ export function Recommendations({
       {together && (
         <p
           className={cn(
-            'mt-4 rounded-[3px] border border-signal/30 bg-signal-soft px-4 py-3 text-[0.9375rem]',
+            'mt-4 rounded-lg border border-signal/30 bg-signal-soft px-4 py-3 text-[0.9375rem]',
           )}
         >
           Fazendo estas três coisas juntas:{' '}

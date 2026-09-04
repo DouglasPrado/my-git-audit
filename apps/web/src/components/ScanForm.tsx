@@ -56,9 +56,9 @@ export function ScanForm() {
           size="lg"
           disabled={pending || url.trim().length === 0}
           /* O estado desabilitado padrão fantasma o botão primário com opacidade,
-             e sobre papel claro isso vira um bloco cinza com o rótulo ilegível.
-             Aqui ele vira superfície neutra com texto apagado: continua legível,
-             e comunica "ainda não" em vez de "quebrado". */
+             e menta a 50% sobre chapa preta vira um bloco morto com o rótulo
+             ilegível. Aqui ele vira superfície neutra com texto apagado:
+             continua legível, e comunica "ainda não" em vez de "quebrado". */
           className="h-12 px-7 disabled:bg-paper-sunken disabled:text-ink-faint disabled:opacity-100"
         >
           {pending ? 'Abrindo…' : 'Auditar'}

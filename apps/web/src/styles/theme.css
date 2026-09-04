@@ -1,61 +1,120 @@
 /* =============================================================================
- * TEMA — "folha de inspeção"
+ * TEMA — design system `resend-design`
  *
- * O mundo deste produto é revisão de código e trilha de auditoria: evidência com
- * arquivo:linha, valores assinados, uma conta que fecha. A linguagem visual é a
- * de um LIVRO-RAZÃO, não a de um painel — porque `adquirido + perdido = 100` é
- * literalmente uma identidade contábil, e a interface deve mostrar isso.
+ * A linguagem visual vem da skill em `design/`: chapa preta, um único acento
+ * menta, três papéis tipográficos (serifa de display na manchete, Inter no
+ * texto, Commit Mono na cifra) e grade de 4px.
  *
- * Cor carrega SINAL, não decoração: verde é crédito, óxido é débito, e o azul
- * saturado é reservado ao que está vivo (foco, preenchimento, link).
+ * O que o produto já tinha continua de pé: os NOMES semânticos são de domínio,
+ * não de decoração. `credit`/`debit` são crédito e débito de um razão, `rule` é
+ * filete, `signal` é o que está vivo. A marca troca os VALORES, não o
+ * vocabulário — e por isso nenhum componente precisou aprender outra língua.
+ *
+ * TEMA ÚNICO, ESCURO. A skill declara `dark mode toggle: no` e a captura da
+ * homepage é chapa preta. Não existe paleta clara da marca para servir, e
+ * inventar uma seria decidir por conta própria algo que a marca já decidiu.
+ * Por isso não há bloco `prefers-color-scheme` aqui — `color-scheme: dark` em
+ * `global.css` faz controles nativos e barra de rolagem acompanharem.
  * ========================================================================== */
 
 @theme {
-  /* --- Cor: superfícies ------------------------------------------------- */
-  --color-paper: #edeff2;
-  --color-paper-raised: #f7f8fa;
-  --color-paper-sunken: #e3e7ec;
-  --color-ink: #14181d;
-  --color-ink-soft: #5a646e;
-  --color-ink-faint: #8c959f;
-  --color-ink-inverse: #f7f8fa;
+  /* --- Cor: superfícies --------------------------------------------------
+   * #000 é o fundo da resend (`--background: #000`); #101010 e #1b1b1b são
+   * `color-zinc-950` e `color-light-gray-12` da paleta extraída. A profundidade
+   * vem de camada + filete interno, nunca de sombra colorida. */
+  --color-paper: #000000;
+  --color-paper-raised: #101010;
+  --color-paper-sunken: #1b1b1b;
+  --color-ink: #ffffff;
+  --color-ink-soft: #a0a0a0;
+  --color-ink-faint: #8f8f8f;
+  --color-ink-inverse: #000000;
 
-  /* --- Cor: filetes ----------------------------------------------------- */
-  --color-rule: #c9d0d8;
-  --color-rule-strong: #a4aeb9;
+  /* --- Cor: filetes -------------------------------------------------------
+   * Três níveis porque três coisas diferentes precisam de borda: linha de
+   * tabela (quase invisível), divisor de seção, e contorno de controle — que
+   * precisa ser ACHÁVEL, daí o #505050 da paleta, o mais claro dos três. */
+  --color-rule: #212629;
+  --color-rule-strong: #323232;
+  --color-rule-edge: #505050;
 
-  /* --- Cor: sinal contábil ---------------------------------------------- */
-  --color-credit: #1f6f4a;
-  --color-credit-soft: #d6e8de;
-  --color-debit: #a6402c;
-  --color-debit-soft: #f0dcd7;
-  --color-signal: #2b4fd8;
-  --color-signal-soft: #dde3fa;
-  --color-warn: #8a6a12;
+  /* --- Cor: marca ---------------------------------------------------------
+   * #62ffb3 é o único pop de cor do sistema. A skill reserva-o a CTA, link,
+   * anel de foco e estado ativo — e é exatamente onde ele aparece aqui. */
+  --color-brand: #62ffb3;
+  --color-brand-ink: #000000;
+  --color-brand-soft: color-mix(in oklab, #62ffb3 12%, #000000);
 
-  /* --- Tipografia -------------------------------------------------------- */
-  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
-  --font-text: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-spline-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+  /* --- Cor: sinal contábil ------------------------------------------------
+   * `credit` preenche metade da tela num relatório: se ele fosse a menta, o
+   * acento deixaria de ser acento — a skill reserva #62ffb3 a CTA, link, foco e
+   * estado ativo, e uma barra de 100 unidades não é nenhum dos quatro. Então
+   * adquirido usa o verde fundo da paleta (`color-green-500`) e a menta fica com
+   * o que é raro: `signal` — bônus e projeção — mais os controles. Mesma
+   * família, duas leituras, e o pop continua valendo alguma coisa.
+   *
+   * EXTENSÃO DECLARADA: a paleta extraída não tem papel destrutivo nem alerta
+   * que sobreviva a fundo preto (#9c6b2e dá 4.56:1). Os dois valores abaixo
+   * vêm do Radix, que é o sistema que a própria resend usa — os tokens dela
+   * referenciam `--red-a8`, `--orange-a8`, `--green-a8`. É extensão do sistema,
+   * não cor inventada, e ambos passam AA sobre #000 (7.24:1 e 13.4:1). */
+  --color-credit: #00c758;
+  --color-credit-soft: color-mix(in oklab, #00c758 14%, #000000);
+  --color-debit: #ff6369;
+  --color-debit-soft: color-mix(in oklab, #ff6369 16%, #000000);
+  --color-signal: #62ffb3;
+  --color-signal-soft: color-mix(in oklab, #62ffb3 12%, #000000);
+  --color-warn: #ffc53d;
+
+  /* --- Tipografia ---------------------------------------------------------
+   * Três papéis, cada um com um trabalho. Domaine Display Narrow só na
+   * manchete — é a serifa da homepage da resend; Inter variável carrega todo o
+   * texto de interface; Commit Mono carrega toda cifra. Nada de mistura fora
+   * disso: hierarquia sai de tamanho, peso e cor. */
+  --font-display: var(--font-domaine), ui-serif, Georgia, 'Times New Roman', serif;
+  --font-text: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-commit), ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Escala fluida: o ritmo é do tema, não de cada seção. */
-  --text-figure: clamp(3.5rem, 9vw, 6.5rem);
-  --text-figure--line-height: 0.86;
-  --text-display: clamp(2rem, 5vw, 3.25rem);
-  --text-display--line-height: 1.02;
-  --text-lede: clamp(1.0625rem, 1.6vw, 1.25rem);
+  --text-figure: clamp(4rem, 10vw, 7rem);
+  --text-figure--line-height: 0.84;
+  --text-display: clamp(2.5rem, 6vw, 4.25rem);
+  --text-display--line-height: 0.98;
+  --text-lede: clamp(1.0625rem, 1.5vw, 1.3125rem);
   --text-lede--line-height: 1.55;
 
-  /* --- Estrutura --------------------------------------------------------- */
+  /* --- Estrutura ---------------------------------------------------------- */
   --container-sheet: 68rem;
   --container-prose: 40rem;
 
-  /* --- Movimento --------------------------------------------------------- */
-  --duration-instant: 90ms;
-  --duration-fast: 180ms;
-  --duration-base: 320ms;
-  --duration-reveal: 620ms;
-  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  /* --- Raio ---------------------------------------------------------------
+   * A escala da skill, com 6px como padrão. Substitui os 3px do razão: a marca
+   * é de canto arredondado, e os filetes continuam se encontrando porque quem
+   * separa linha é borda, não caixa. */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+
+  /* --- Elevação -----------------------------------------------------------
+   * Tokens de sombra da skill, verbatim. Sobre preto, quem constrói camada é o
+   * filete interno (`hairline`), não o borrão — daí ele ser o primeiro. */
+  --shadow-hairline: inset 0 0 0 0.0625rem #ffffff1a;
+  --shadow-raised: 0 0.25rem 1.25rem 0.125rem #0000002e, inset 0 0 0 0.0625rem #ffffff1a;
+  --shadow-halo: 0 0 4rem 0.5rem #ffffff0b, 0 0 1rem 0.375rem #ffffff03;
+  --shadow-floating: 0 0 40px 10px #00000040, inset 0 0 0 0.0625rem #ffffff1a;
+
+  /* --- Movimento ----------------------------------------------------------
+   * `cubic-bezier(.3,1,.66,1)` é a curva padrão declarada pela skill. */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-reveal: 600ms;
+  --ease-out-soft: cubic-bezier(0.3, 1, 0.66, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ---------------------------------------------------------------------------
@@ -63,12 +122,14 @@
  *
  * A biblioteca fala o vocabulário do shadcn (`bg-primary`, `border-input`,
  * `text-muted-foreground`). No Tailwind v4 esses utilitários só existem se
- * houver `--color-primary` no tema — daí este bloco, que mapeia os nomes do
- * shadcn para a paleta do razão.
+ * houver `--color-primary` no tema — daí este bloco.
  *
- * `inline` é obrigatório aqui: sem ele o Tailwind criaria uma variável nova e
- * congelaria o valor claro. Com ele, o utilitário aponta para `var(--color-ink)`
- * e continua respeitando a troca de tema em tempo de execução, abaixo.
+ * `inline` é obrigatório: sem ele o Tailwind criaria uma variável nova e
+ * congelaria o valor, em vez de apontar para `var(--color-ink)`.
+ *
+ * Uma consequência de propósito: `--color-primary` é a menta, então TODO
+ * primitivo primário da biblioteca — botão `default`, `ToggleGroupItem` em
+ * `data-[state=on]` — já nasce com o acento da marca, sem uma classe a mais.
  * ------------------------------------------------------------------------- */
 @theme inline {
   --color-background: var(--color-paper);
@@ -77,8 +138,8 @@
   --color-card-foreground: var(--color-ink);
   --color-popover: var(--color-paper-raised);
   --color-popover-foreground: var(--color-ink);
-  --color-primary: var(--color-ink);
-  --color-primary-foreground: var(--color-ink-inverse);
+  --color-primary: var(--color-brand);
+  --color-primary-foreground: var(--color-brand-ink);
   --color-secondary: var(--color-paper-sunken);
   --color-secondary-foreground: var(--color-ink);
   --color-muted: var(--color-paper-sunken);
@@ -88,48 +149,105 @@
   --color-destructive: var(--color-debit);
   --color-destructive-foreground: var(--color-ink-inverse);
   --color-success: var(--color-credit);
-  --color-border: var(--color-rule);
-  --color-input: var(--color-rule-strong);
-  --color-ring: var(--color-signal);
+  --color-border: var(--color-rule-strong);
+  --color-input: var(--color-rule-edge);
+  --color-ring: var(--color-brand);
 }
 
 :root {
-  /* Razão não tem canto arredondado: os filetes precisam encontrar-se. */
-  --radius: 3px;
-  --radius-xs: 2px;
+  color-scheme: dark;
   --card-spacing: 1.25rem;
 }
 
 /* ---------------------------------------------------------------------------
- * Tema escuro: a folha vira chapa. Os sinais mantêm o significado, com mais
- * luminosidade para sobreviver ao fundo.
+ * REPINTURA DO TEMA INJETADO PELO @gba/components.
  *
- * ATENÇÃO — isto é `:root`, NÃO `@theme`.
+ * O `@source` acima não é a história toda. O barrel `dist/index.mjs` carrega a
+ * folha compilada da biblioteca DENTRO do próprio JavaScript e a injeta num
+ * `<style>` em tempo de execução — importar qualquer componente traz o tema
+ * dela junto, sem passar por bundler, config ou import de CSS. Dá para conferir
+ * no navegador: `getComputedStyle(document.documentElement)` devolve
+ * `--brand-primary: #293241`, que não existe em lugar nenhum deste repositório.
  *
- * `@theme` é construção de tempo de build: dentro de `@media` ele é achatado e o
- * último bloco vence INCONDICIONALMENTE, apagando os valores claros do CSS. O
- * sintoma é traiçoeiro: o site fica sempre escuro e a paleta clara simplesmente
- * não existe no arquivo servido. Sobrescrever as variáveis em `:root` é o que
- * funciona em tempo de execução — e é o que a ponte acima precisa para seguir
- * junto, já que ela aponta para estas variáveis.
+ * Consequência: a `<style>` injetada entra DEPOIS do nosso `<link>`, e com a
+ * mesma especificidade (`:root`) ela vence. Sem este bloco, todo primitivo da
+ * biblioteca — botão primário, `ToggleGroupItem` ativo, texto de `Card` — sai
+ * no azul-ardósia da marca dela, sobre a chapa preta da nossa. Foi exatamente o
+ * sintoma: persona selecionada em #293241 e nota de teto em #3a3a3a sobre
+ * vermelho, ilegível.
+ *
+ * `:root:root` é o conserto: 0,2,0 contra 0,1,0 ganha por especificidade, e
+ * portanto independe da ordem de injeção — que não controlamos. Um `!important`
+ * também venceria, mas quebraria a possibilidade de sobrescrever pontualmente
+ * num componente, e `@layer` não serve porque regra sem camada vence regra em
+ * camada, e a folha dela é a que está fora.
+ *
+ * Só as folhas precisam estar aqui. O que a biblioteca deriva com `var()` —
+ * `--ring`, `--scrollbar-track`, `--sidebar-*` — segue sozinho assim que a raiz
+ * da cadeia é nossa.
  * ------------------------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-paper: #101419;
-    --color-paper-raised: #171c23;
-    --color-paper-sunken: #0b0e12;
-    --color-ink: #e8ecf1;
-    --color-ink-soft: #97a1ac;
-    --color-ink-faint: #6b757f;
-    --color-ink-inverse: #101419;
-    --color-rule: #2a323b;
-    --color-rule-strong: #3d4751;
-    --color-credit: #4bbd85;
-    --color-credit-soft: #122b20;
-    --color-debit: #e0765c;
-    --color-debit-soft: #2e1a15;
-    --color-signal: #7d95f5;
-    --color-signal-soft: #171f3d;
-    --color-warn: #d5a83c;
-  }
+:root:root {
+  /* Sementes da marca dela: qualquer derivação que reste cai na nossa paleta. */
+  --brand-ink: var(--color-ink-inverse);
+  --brand-base: var(--color-ink);
+  --brand-primary: var(--color-brand);
+  --brand-secondary: var(--color-paper-sunken);
+  --brand-secondary-foreground: var(--color-ink);
+  --brand-danger: var(--color-debit);
+  --brand-danger-foreground: var(--color-ink-inverse);
+  --brand-success: var(--color-credit);
+  --brand-success-foreground: var(--color-brand-ink);
+  --brand-title: var(--color-ink);
+  --brand-subtitle: var(--color-ink-soft);
+  --brand-app-shell-background: var(--color-paper-raised);
+  --brand-app-shell-foreground: var(--color-ink);
+
+  /* Vocabulário shadcn: os valores fixos, que não seguem as sementes. */
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--color-paper-raised);
+  --card-foreground: var(--color-ink);
+  --popover: var(--color-paper-raised);
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-brand);
+  --primary-foreground: var(--color-brand-ink);
+  --secondary: var(--color-paper-sunken);
+  --secondary-foreground: var(--color-ink);
+  --muted: var(--color-paper-sunken);
+  --muted-foreground: var(--color-ink-soft);
+  --accent: var(--color-paper-sunken);
+  --accent-foreground: var(--color-ink);
+  --border: var(--color-rule-strong);
+  --input: var(--color-rule-edge);
+  --ring: var(--color-brand);
+  --danger: var(--color-debit);
+  --danger-foreground: var(--color-ink-inverse);
+  --destructive: var(--color-debit);
+  --destructive-foreground: var(--color-ink-inverse);
+  --success: var(--color-credit);
+  --success-foreground: var(--color-brand-ink);
+  --title: var(--color-ink);
+  --subtitle: var(--color-ink-soft);
+  --disabled: var(--color-ink-faint);
+  --sidebar-border: var(--color-rule);
+  --sidebar-ring: var(--color-brand);
+  --shadow-surface: #0000008c;
+
+  /* A folha dela também redeclara a escala de raio do Tailwind. */
+  --radius: 0.625rem;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+}
+
+/* Ângulo do contorno em movimento. Precisa ser `@property` — variável comum não
+ * interpola, e sem interpolação o gradiente pula em vez de girar. */
+@property --disco-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
