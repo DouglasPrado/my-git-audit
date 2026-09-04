@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+/* O CSS COMPILADO do @gba/components não é importado, de propósito.
+ *
+ * Ele é um Tailwind já construído, com preflight e declaração própria de camadas.
+ * Trazê-lo para dentro deste build reordena as camadas e faz os utilitários daqui
+ * perderem a cascata — o sintoma foi título encolhido e fundo branco, com os
+ * utilitários presentes no CSS servido e sem nenhum efeito.
+ *
+ * O caminho certo para um consumidor Tailwind v4 é mandar o build ESCANEAR o
+ * fonte da biblioteca: as classes que ela usa (`bg-primary`, `border-input`,
+ * `bg-secondary`) passam a ser geradas por ESTE build e resolvem contra os tokens
+ * do razão. Uma folha só, uma cascata só, e a paleta se propaga sozinha. */
+@source '../../node_modules/@gba/components/dist/index.mjs';
+
+@import './theme.css';
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-text);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Toda cifra é tabular e alinhada — é um razão, os dígitos têm que empilhar. */
+  .figure {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-ink-inverse);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .rule-t {
+    border-top: 1px solid var(--color-rule);
+  }
+  .rule-b {
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  /* Hachura do que foi PERDIDO. Vazado, não colorido: o olho lê como ausência. */
+  .hatch {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--color-rule-strong) 0 1px,
+      transparent 1px 5px
+    );
+  }
+
+  .reveal {
+    animation: reveal var(--duration-reveal) var(--ease-out-soft) both;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes grow {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* Nome próprio: `grow` sozinho colide com o utilitário flex-grow do Tailwind. */
+  .bar-grow {
+    transform-origin: left;
+    animation: grow var(--duration-reveal) var(--ease-out-soft) both;
+  }
+}

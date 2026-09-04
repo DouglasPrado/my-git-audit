@@ -1,0 +1,135 @@
+/* =============================================================================
+ * TEMA — "folha de inspeção"
+ *
+ * O mundo deste produto é revisão de código e trilha de auditoria: evidência com
+ * arquivo:linha, valores assinados, uma conta que fecha. A linguagem visual é a
+ * de um LIVRO-RAZÃO, não a de um painel — porque `adquirido + perdido = 100` é
+ * literalmente uma identidade contábil, e a interface deve mostrar isso.
+ *
+ * Cor carrega SINAL, não decoração: verde é crédito, óxido é débito, e o azul
+ * saturado é reservado ao que está vivo (foco, preenchimento, link).
+ * ========================================================================== */
+
+@theme {
+  /* --- Cor: superfícies ------------------------------------------------- */
+  --color-paper: #edeff2;
+  --color-paper-raised: #f7f8fa;
+  --color-paper-sunken: #e3e7ec;
+  --color-ink: #14181d;
+  --color-ink-soft: #5a646e;
+  --color-ink-faint: #8c959f;
+  --color-ink-inverse: #f7f8fa;
+
+  /* --- Cor: filetes ----------------------------------------------------- */
+  --color-rule: #c9d0d8;
+  --color-rule-strong: #a4aeb9;
+
+  /* --- Cor: sinal contábil ---------------------------------------------- */
+  --color-credit: #1f6f4a;
+  --color-credit-soft: #d6e8de;
+  --color-debit: #a6402c;
+  --color-debit-soft: #f0dcd7;
+  --color-signal: #2b4fd8;
+  --color-signal-soft: #dde3fa;
+  --color-warn: #8a6a12;
+
+  /* --- Tipografia -------------------------------------------------------- */
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-text: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-spline-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Escala fluida: o ritmo é do tema, não de cada seção. */
+  --text-figure: clamp(3.5rem, 9vw, 6.5rem);
+  --text-figure--line-height: 0.86;
+  --text-display: clamp(2rem, 5vw, 3.25rem);
+  --text-display--line-height: 1.02;
+  --text-lede: clamp(1.0625rem, 1.6vw, 1.25rem);
+  --text-lede--line-height: 1.55;
+
+  /* --- Estrutura --------------------------------------------------------- */
+  --container-sheet: 68rem;
+  --container-prose: 40rem;
+
+  /* --- Movimento --------------------------------------------------------- */
+  --duration-instant: 90ms;
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-reveal: 620ms;
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---------------------------------------------------------------------------
+ * Ponte para o @gba/components.
+ *
+ * A biblioteca fala o vocabulário do shadcn (`bg-primary`, `border-input`,
+ * `text-muted-foreground`). No Tailwind v4 esses utilitários só existem se
+ * houver `--color-primary` no tema — daí este bloco, que mapeia os nomes do
+ * shadcn para a paleta do razão.
+ *
+ * `inline` é obrigatório aqui: sem ele o Tailwind criaria uma variável nova e
+ * congelaria o valor claro. Com ele, o utilitário aponta para `var(--color-ink)`
+ * e continua respeitando a troca de tema em tempo de execução, abaixo.
+ * ------------------------------------------------------------------------- */
+@theme inline {
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --color-card: var(--color-paper-raised);
+  --color-card-foreground: var(--color-ink);
+  --color-popover: var(--color-paper-raised);
+  --color-popover-foreground: var(--color-ink);
+  --color-primary: var(--color-ink);
+  --color-primary-foreground: var(--color-ink-inverse);
+  --color-secondary: var(--color-paper-sunken);
+  --color-secondary-foreground: var(--color-ink);
+  --color-muted: var(--color-paper-sunken);
+  --color-muted-foreground: var(--color-ink-soft);
+  --color-accent: var(--color-paper-sunken);
+  --color-accent-foreground: var(--color-ink);
+  --color-destructive: var(--color-debit);
+  --color-destructive-foreground: var(--color-ink-inverse);
+  --color-success: var(--color-credit);
+  --color-border: var(--color-rule);
+  --color-input: var(--color-rule-strong);
+  --color-ring: var(--color-signal);
+}
+
+:root {
+  /* Razão não tem canto arredondado: os filetes precisam encontrar-se. */
+  --radius: 3px;
+  --radius-xs: 2px;
+  --card-spacing: 1.25rem;
+}
+
+/* ---------------------------------------------------------------------------
+ * Tema escuro: a folha vira chapa. Os sinais mantêm o significado, com mais
+ * luminosidade para sobreviver ao fundo.
+ *
+ * ATENÇÃO — isto é `:root`, NÃO `@theme`.
+ *
+ * `@theme` é construção de tempo de build: dentro de `@media` ele é achatado e o
+ * último bloco vence INCONDICIONALMENTE, apagando os valores claros do CSS. O
+ * sintoma é traiçoeiro: o site fica sempre escuro e a paleta clara simplesmente
+ * não existe no arquivo servido. Sobrescrever as variáveis em `:root` é o que
+ * funciona em tempo de execução — e é o que a ponte acima precisa para seguir
+ * junto, já que ela aponta para estas variáveis.
+ * ------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #101419;
+    --color-paper-raised: #171c23;
+    --color-paper-sunken: #0b0e12;
+    --color-ink: #e8ecf1;
+    --color-ink-soft: #97a1ac;
+    --color-ink-faint: #6b757f;
+    --color-ink-inverse: #101419;
+    --color-rule: #2a323b;
+    --color-rule-strong: #3d4751;
+    --color-credit: #4bbd85;
+    --color-credit-soft: #122b20;
+    --color-debit: #e0765c;
+    --color-debit-soft: #2e1a15;
+    --color-signal: #7d95f5;
+    --color-signal-soft: #171f3d;
+    --color-warn: #d5a83c;
+  }
+}

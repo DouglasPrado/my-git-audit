@@ -1,0 +1,30 @@
+{
+  "name": "my-git-audit",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "packageManager": "pnpm@11.17.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "eslint packages apps/web/src tools --max-warnings=0",
+    "test": "turbo run test",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "scan": "tsx tools/scan.ts",
+    "fixture": "tsx tools/make-fixture.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.2.0",
+    "eslint": "^10.8.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.23.13",
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0",
+    "vitest": "^4.1.11"
+  }
+}

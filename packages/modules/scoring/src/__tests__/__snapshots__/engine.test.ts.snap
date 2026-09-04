@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`motor de pontuação > reproduz o golden do perfil de calibração 1`] = `
+{
+  "categories": {
+    "CUR": 87.4,
+    "DIS": 60.5,
+    "ENG": 43.2,
+    "HYG": 25,
+    "MNT": 70.7,
+    "OSS": 34.1,
+    "POS": 68.6,
+    "PRE": 75.3,
+  },
+  "overall": 56.4,
+  "personas": {
+    "freelancer": 65.8,
+    "general": 59.3,
+    "oss-maintainer": 53.8,
+    "recruiter": 64.3,
+    "senior-engineer": 56.4,
+    "staff-engineer": 58.6,
+  },
+  "repos": [
+    "agent-sdk:Solid",
+    "bake-cli:Thin",
+    "clipview:Solid",
+    "landing:Thin",
+    "match-engine:Solid",
+    "pane:Solid",
+    "spec-kit:Solid",
+    "vault:Solid",
+  ],
+  "rubricVersion": "1.0.0",
+}
+`;

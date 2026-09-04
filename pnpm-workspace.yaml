@@ -1,0 +1,19 @@
+# Fonte ÚNICA da config do pnpm. O campo `pnpm` do package.json não é usado:
+# pnpm >= 11 deixou de lê-lo, e tê-lo nos dois lugares causa migração parcial.
+packages:
+  - apps/*
+  - packages/shared/*
+  - packages/modules/*
+  - packages/platform/*
+
+# O pnpm 11 bloqueia build script por padrão e FALHA o install se algum for
+# ignorado. Sem esta lista o `pnpm install --frozen-lockfile` do Dockerfile
+# quebra com ERR_PNPM_IGNORED_BUILDS — o que aconteceu no primeiro build da
+# imagem, e não aparece no desenvolvimento local porque lá o aprovador já rodou.
+allowBuilds:
+  # Binário nativo do esbuild, usado pelo vitest e pelo tsx.
+  esbuild: true
+  # Binários de imagem que o Next usa na otimização.
+  sharp: true
+  '@tailwindcss/oxide': true
+  unrs-resolver: true

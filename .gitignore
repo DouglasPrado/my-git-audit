@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.next/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+.DS_Store
+coverage/
+apps/web/.env.local
+packages/modules/scoring/src/__tests__/fixtures/*.local.json

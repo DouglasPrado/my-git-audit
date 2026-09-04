@@ -1,0 +1,2830 @@
+{
+ "collectorVersion": "1.0.0",
+ "excluded": [
+  {
+   "name": "repo-408",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-185",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-91",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-146",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-88",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-40",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-844",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-536",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-448",
+   "reason": "vazio ou trivial demais para avaliar"
+  },
+  {
+   "name": "repo-216",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-0",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-391",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-568",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-153",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-990",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-392",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-533",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-248",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-622",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-935",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-440",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-234",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-664",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-57",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-544",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-128",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-286",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-840",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-611",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-761",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-896",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-680",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-160",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-329",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-293",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-200",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-336",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-552",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-808",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-80",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-736",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-127",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-919",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-828",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-420",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-318",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-463",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-602",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-262",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-995",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-168",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-11",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-608",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-693",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-528",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-904",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-976",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-760",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-104",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-300",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-776",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-640",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-524",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-496",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-300",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-968",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-435",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-322",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-267",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-248",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-942",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-230",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-0",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-634",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-472",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-302",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-368",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-616",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-953",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-780",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-59",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-277",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-408",
+   "reason": "fora dos mais relevantes"
+  },
+  {
+   "name": "repo-710",
+   "reason": "fora dos mais relevantes"
+  }
+ ],
+ "portfolio": {
+  "archivedCount": 6,
+  "distinctProjectTypes": 6,
+  "forkCount": 0,
+  "languageConcentration": 0.07839999999999996,
+  "mergedPullRequestsToOthers": 0,
+  "noisyCount": 8,
+  "staleUnarchivedCount": 31,
+  "topicConcentration": 0.004687500000000013,
+  "totalOwnRepos": 92
+ },
+ "profile": {
+  "bio": "Software engineer building developer tools, AI infrastructure and distributed systems.",
+  "company": null,
+  "email": null,
+  "followers": 80,
+  "location": "Somewhere",
+  "login": "octo-example",
+  "name": "Octo Example",
+  "pinnedCount": 6,
+  "profileReadme": {
+   "byteSize": 1143,
+   "path": "README.MD",
+   "text": "# octo-example\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)\n[lorem ipsum](./docs/2.md)\n[lorem ipsum](./docs/3.md)\n[lorem ipsum](./docs/4.md)"
+  },
+  "profileReadmeRepoExists": true,
+  "socialAccounts": 1,
+  "websiteUrl": "https://example.com"
+ },
+ "repositories": [
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:50:49Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:50:49Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:50:49Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum",
+    "lorem ipsum",
+    "lorem ipsum dolor",
+    "lorem ipsum",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur",
+    "lorem ipsum dolor",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum dolor",
+    "lorem ipsum",
+    "lorem ipsum"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 27,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": false,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+   "forks": 0,
+   "githubTree": [],
+   "homepageUrl": "https://example.com",
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [],
+   "lastCommitAt": "2026-09-04T16:50:47Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": null,
+   "name": "spec-kit",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": null,
+   "projectType": "docs",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 12211,
+    "path": "README.md",
+    "text": "# spec-kit\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```bash\npnpm install\n```\n\n```ts\nconst x5 = 5;\n```\n\n```ts\nconst x6 = 6;\n```\n\n```ts\nconst x7 = 7;\n```\n\n```ts\nconst x8 = 8;\n```\n\n```ts\nconst x9 = 9;\n```\n\n```ts\nconst x10 = 10;\n```\n\n```ts\nconst x11 = 11;\n```\n\n```ts\nconst x12 = 12;\n```\n\n```ts\nconst x13 = 13;\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n```ts\nconst x21 = 21;\n```\n\n```ts\nconst x22 = 22;\n```\n\n```ts\nconst x23 = 23;\n```\n\n```ts\nconst x24 = 24;\n```\n\n```ts\nconst x25 = 25;\n```\n\n```ts\nconst x26 = 26;\n```\n\n```ts\nconst x27 = 27;\n```\n\n```ts\nconst x28 = 28;\n```\n\n```ts\nconst x29 = 29;\n```\n\n```ts\nconst x30 = 30;\n```\n\n```ts\nconst x31 = 31;\n```\n"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".claude",
+     "type": "tree"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [],
+   "stars": 0,
+   "topics": [
+    "ai-assisted-development",
+    "claude-code",
+    "code-generation",
+    "developer-tools",
+    "developer-workflow",
+    "software-architecture",
+    "software-engineering",
+    "technical-documentation"
+   ],
+   "workflows": []
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:43:38Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:43:38Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:43:38Z"
+    },
+    {
+     "conclusion": "FAILURE",
+     "updatedAt": "2026-09-04T16:45:55Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 22,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": true,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+   "forks": 0,
+   "githubTree": [
+    {
+     "name": "workflows",
+     "type": "tree"
+    }
+   ],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [
+    {
+     "name": "Rust",
+     "size": 464372
+    },
+    {
+     "name": "TypeScript",
+     "size": 185053
+    },
+    {
+     "name": "Shell",
+     "size": 58290
+    },
+    {
+     "name": "CSS",
+     "size": 5668
+    },
+    {
+     "name": "JavaScript",
+     "size": 740
+    },
+    {
+     "name": "HTML",
+     "size": 492
+    }
+   ],
+   "lastCommitAt": "2026-09-04T16:43:36Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": "NOASSERTION",
+   "name": "pane",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "Rust",
+   "projectType": "desktop",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 10222,
+    "path": "README.md",
+    "text": "# pane\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```ts\nconst x8 = 8;\n```\n\n```ts\nconst x9 = 9;\n```\n\n```ts\nconst x10 = 10;\n```\n\n```ts\nconst x11 = 11;\n```\n\n```ts\nconst x12 = 12;\n```\n\n```ts\nconst x13 = 13;\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n```ts\nconst x21 = 21;\n```\n\n```ts\nconst x22 = 22;\n```\n\n```ts\nconst x23 = 23;\n```\n\n```ts\nconst x24 = 24;\n```\n\n```ts\nconst x25 = 25;\n```\n\n```ts\nconst x26 = 26;\n```\n\n```ts\nconst x27 = 27;\n```\n\n```ts\nconst x28 = 28;\n```\n\n```ts\nconst x29 = 29;\n```\n\n```ts\nconst x30 = 30;\n```\n\n```ts\nconst x31 = 31;\n```\n\n```ts\nconst x32 = 32;\n```\n\n```ts\nconst x33 = 33;\n```\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)\n[lorem ipsum](./docs/2.md)\n[lorem ipsum](./docs/3.md)\n[lorem ipsum](./docs/4.md)\n[lorem ipsum](./docs/5.md)\n[lorem ipsum](./docs/6.md)\n[lorem ipsum](./docs/7.md)\n[lorem ipsum](./docs/8.md)\n[lorem ipsum](./docs/9.md)"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".github",
+     "type": "tree"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierignore",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierrc.json",
+     "type": "blob"
+    },
+    {
+     "name": ".specify",
+     "type": "tree"
+    },
+    {
+     "name": "Cargo.lock",
+     "type": "blob"
+    },
+    {
+     "name": "Cargo.toml",
+     "type": "blob"
+    },
+    {
+     "name": "CLAUDE.md",
+     "type": "blob"
+    },
+    {
+     "name": "clippy.toml",
+     "type": "blob"
+    },
+    {
+     "name": "crates",
+     "type": "tree"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "eslint.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "index.html",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-lock.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-workspace.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    },
+    {
+     "name": "rustfmt.toml",
+     "type": "blob"
+    },
+    {
+     "name": "scripts",
+     "type": "tree"
+    },
+    {
+     "name": "specs",
+     "type": "tree"
+    },
+    {
+     "name": "src",
+     "type": "tree"
+    },
+    {
+     "name": "src-tauri",
+     "type": "tree"
+    },
+    {
+     "name": "THIRD_PARTY_LICENSES.md",
+     "type": "blob"
+    },
+    {
+     "name": "tsconfig.app.json",
+     "type": "blob"
+    },
+    {
+     "name": "tsconfig.json",
+     "type": "blob"
+    },
+    {
+     "name": "tsconfig.node.json",
+     "type": "blob"
+    },
+    {
+     "name": "vite.config.ts",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [
+    {
+     "name": "App.tsx",
+     "type": "blob"
+    },
+    {
+     "name": "components",
+     "type": "tree"
+    },
+    {
+     "name": "features",
+     "type": "tree"
+    },
+    {
+     "name": "lib",
+     "type": "tree"
+    },
+    {
+     "name": "main.tsx",
+     "type": "blob"
+    },
+    {
+     "name": "stores",
+     "type": "tree"
+    },
+    {
+     "name": "styles",
+     "type": "tree"
+    }
+   ],
+   "stars": 0,
+   "topics": [
+    "ai-agents",
+    "developer-tools",
+    "git-worktree",
+    "macos",
+    "rust",
+    "tauri",
+    "terminal",
+    "typescript"
+   ],
+   "workflows": [
+    {
+     "name": "ci.yml",
+     "text": "name: ci-0\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: pnpm build\n      - run: pnpm test"
+    }
+   ]
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:21:32Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:21:32Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:21:32Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum",
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur",
+    "lorem ipsum",
+    "lorem ipsum",
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 49,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": false,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+   "forks": 0,
+   "githubTree": [],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [
+    {
+     "name": "TypeScript",
+     "size": 202942
+    },
+    {
+     "name": "CSS",
+     "size": 31625
+    },
+    {
+     "name": "JavaScript",
+     "size": 22967
+    },
+    {
+     "name": "HTML",
+     "size": 1641
+    },
+    {
+     "name": "Shell",
+     "size": 784
+    }
+   ],
+   "lastCommitAt": "2026-09-04T16:21:31Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": null,
+   "name": "clipview",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "TypeScript",
+   "projectType": "desktop",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 5568,
+    "path": "README.md",
+    "text": "# clipview\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n![lorem ipsum](./docs/img-0.png)\n\n![lorem ipsum](./docs/img-1.png)\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```ts\nconst x4 = 4;\n```\n\n```ts\nconst x5 = 5;\n```\n\n```ts\nconst x6 = 6;\n```\n\n```ts\nconst x7 = 7;\n```\n\n```ts\nconst x8 = 8;\n```\n\n```ts\nconst x9 = 9;\n```\n\n```ts\nconst x10 = 10;\n```\n\n```ts\nconst x11 = 11;\n```\n\n```ts\nconst x12 = 12;\n```\n\n```ts\nconst x13 = 13;\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n[lorem ipsum](./docs/0.md)"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".npmrc",
+     "type": "blob"
+    },
+    {
+     "name": "apps",
+     "type": "tree"
+    },
+    {
+     "name": "assets",
+     "type": "tree"
+    },
+    {
+     "name": "build",
+     "type": "tree"
+    },
+    {
+     "name": "package-lock.json",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "packages",
+     "type": "tree"
+    },
+    {
+     "name": "pnpm-lock.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-workspace.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    },
+    {
+     "name": "scripts",
+     "type": "tree"
+    },
+    {
+     "name": "tsconfig.base.json",
+     "type": "blob"
+    },
+    {
+     "name": "turbo.json",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [],
+   "stars": 0,
+   "topics": [
+    "chrome-extension",
+    "desktop-app",
+    "electron",
+    "macos",
+    "picture-in-picture",
+    "react",
+    "typescript",
+    "youtube-api"
+   ],
+   "workflows": []
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:02:59Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:02:59Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T16:02:59Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 475,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": false,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+   "forks": 0,
+   "githubTree": [],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [
+    {
+     "name": "TypeScript",
+     "size": 3075883
+    },
+    {
+     "name": "CSS",
+     "size": 39339
+    },
+    {
+     "name": "JavaScript",
+     "size": 17781
+    },
+    {
+     "name": "PLpgSQL",
+     "size": 8250
+    }
+   ],
+   "lastCommitAt": "2026-09-04T16:02:57Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": null,
+   "name": "match-engine",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "TypeScript",
+   "projectType": "service",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 7756,
+    "path": "README.md",
+    "text": "# match-engine\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```ts\nconst x3 = 3;\n```\n\n```ts\nconst x4 = 4;\n```\n\n```ts\nconst x5 = 5;\n```\n\n```ts\nconst x6 = 6;\n```\n\n```ts\nconst x7 = 7;\n```\n\n```ts\nconst x8 = 8;\n```\n\n```ts\nconst x9 = 9;\n```\n\n```ts\nconst x10 = 10;\n```\n\n```ts\nconst x11 = 11;\n```\n\n```ts\nconst x12 = 12;\n```\n\n```ts\nconst x13 = 13;\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n```ts\nconst x21 = 21;\n```\n\n```ts\nconst x22 = 22;\n```\n\n```ts\nconst x23 = 23;\n```\n\n```ts\nconst x24 = 24;\n```\n\n```ts\nconst x25 = 25;\n```\n\n```ts\nconst x26 = 26;\n```\n\n```ts\nconst x27 = 27;\n```\n\n```ts\nconst x28 = 28;\n```\n\n```ts\nconst x29 = 29;\n```\n\n```ts\nconst x30 = 30;\n```\n\n```ts\nconst x31 = 31;\n```\n\n```ts\nconst x32 = 32;\n```\n\n```ts\nconst x33 = 33;\n```\n\n```ts\nconst x34 = 34;\n```\n\n```ts\nconst x35 = 35;\n```\n\n```ts\nconst x36 = 36;\n```\n\n```ts\nconst x37 = 37;\n```\n\n```ts\nconst x38 = 38;\n```\n\n```ts\nconst x39 = 39;\n```\n\n```ts\nconst x40 = 40;\n```\n\n```ts\nconst x41 = 41;\n```\n\n```ts\nconst x42 = 42;\n```\n"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".agents",
+     "type": "tree"
+    },
+    {
+     "name": ".claude",
+     "type": "tree"
+    },
+    {
+     "name": ".dockerignore",
+     "type": "blob"
+    },
+    {
+     "name": ".DS_Store",
+     "type": "blob"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".mcp.json",
+     "type": "blob"
+    },
+    {
+     "name": ".nvmrc",
+     "type": "blob"
+    },
+    {
+     "name": "apps",
+     "type": "tree"
+    },
+    {
+     "name": "CLAUDE.md",
+     "type": "blob"
+    },
+    {
+     "name": "docker-compose.yml",
+     "type": "blob"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "eslint.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "packages",
+     "type": "tree"
+    },
+    {
+     "name": "pnpm-lock.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-workspace.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "prisma",
+     "type": "tree"
+    },
+    {
+     "name": "prisma.config.ts",
+     "type": "blob"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    },
+    {
+     "name": "scripts",
+     "type": "tree"
+    },
+    {
+     "name": "tsconfig.base.json",
+     "type": "blob"
+    },
+    {
+     "name": "turbo.json",
+     "type": "blob"
+    },
+    {
+     "name": "vitest.config.ts",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [],
+   "stars": 0,
+   "topics": [],
+   "workflows": []
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T15:56:29Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T15:56:29Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-09-04T15:56:29Z"
+    },
+    {
+     "conclusion": "FAILURE",
+     "updatedAt": "2026-09-04T15:56:42Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum dolor sit amet consectetur",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor",
+    "lorem ipsum dolor",
+    "lorem ipsum dolor",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum",
+    "lorem ipsum",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 186,
+   "community": {
+    "codeOfConduct": true,
+    "contributing": true,
+    "issueTemplate": false,
+    "license": true,
+    "pullRequestTemplate": true,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+   "forks": 0,
+   "githubTree": [
+    {
+     "name": "ISSUE_TEMPLATE",
+     "type": "tree"
+    },
+    {
+     "name": "PULL_REQUEST_TEMPLATE.md",
+     "type": "blob"
+    },
+    {
+     "name": "workflows",
+     "type": "tree"
+    }
+   ],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [
+    {
+     "name": "TypeScript",
+     "size": 1143426
+    },
+    {
+     "name": "JavaScript",
+     "size": 1048046
+    },
+    {
+     "name": "CSS",
+     "size": 4078
+    },
+    {
+     "name": "Dockerfile",
+     "size": 2811
+    }
+   ],
+   "lastCommitAt": "2026-09-04T15:56:27Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": "MIT",
+   "name": "vault",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "TypeScript",
+   "projectType": "service",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 7453,
+    "path": "README.MD",
+    "text": "# vault\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```bash\ncargo build\n```\n\n```bash\ngit clone https://github.com/o/r.git\n```\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n```ts\nconst x21 = 21;\n```\n\n```ts\nconst x22 = 22;\n```\n\n```ts\nconst x23 = 23;\n```\n\n```ts\nconst x24 = 24;\n```\n\n```ts\nconst x25 = 25;\n```\n\n```ts\nconst x26 = 26;\n```\n\n```ts\nconst x27 = 27;\n```\n\n```ts\nconst x28 = 28;\n```\n\n```ts\nconst x29 = 29;\n```\n\n```ts\nconst x30 = 30;\n```\n\n```ts\nconst x31 = 31;\n```\n\n```ts\nconst x32 = 32;\n```\n\n```ts\nconst x33 = 33;\n```\n\n```ts\nconst x34 = 34;\n```\n\n```ts\nconst x35 = 35;\n```\n\n```ts\nconst x36 = 36;\n```\n\n```ts\nconst x37 = 37;\n```\n\n```ts\nconst x38 = 38;\n```\n\n```ts\nconst x39 = 39;\n```\n\n```ts\nconst x40 = 40;\n```\n\n```ts\nconst x41 = 41;\n```\n\n```ts\nconst x42 = 42;\n```\n\n```ts\nconst x43 = 43;\n```\n\n```ts\nconst x44 = 44;\n```\n\n```ts\nconst x45 = 45;\n```\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)\n[lorem ipsum](./docs/2.md)\n[lorem ipsum](./docs/3.md)\n[lorem ipsum](./docs/4.md)"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".claude",
+     "type": "tree"
+    },
+    {
+     "name": ".dockerignore",
+     "type": "blob"
+    },
+    {
+     "name": ".DS_Store",
+     "type": "blob"
+    },
+    {
+     "name": ".env.example",
+     "type": "blob"
+    },
+    {
+     "name": ".github",
+     "type": "tree"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierignore",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierrc",
+     "type": "blob"
+    },
+    {
+     "name": "apps",
+     "type": "tree"
+    },
+    {
+     "name": "Caddyfile",
+     "type": "blob"
+    },
+    {
+     "name": "CLAUDE.md",
+     "type": "blob"
+    },
+    {
+     "name": "CODE_OF_CONDUCT.md",
+     "type": "blob"
+    },
+    {
+     "name": "CONTRIBUTING.md",
+     "type": "blob"
+    },
+    {
+     "name": "docker-compose.dev.yml",
+     "type": "blob"
+    },
+    {
+     "name": "docker-compose.yml",
+     "type": "blob"
+    },
+    {
+     "name": "Dockerfile",
+     "type": "blob"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "eslint.config.mjs",
+     "type": "blob"
+    },
+    {
+     "name": "infra",
+     "type": "tree"
+    },
+    {
+     "name": "LICENSE",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "packages",
+     "type": "tree"
+    },
+    {
+     "name": "pnpm-lock.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-workspace.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "README.MD",
+     "type": "blob"
+    },
+    {
+     "name": "SECURITY.md",
+     "type": "blob"
+    },
+    {
+     "name": "src",
+     "type": "tree"
+    },
+    {
+     "name": "tsconfig.json",
+     "type": "blob"
+    },
+    {
+     "name": "turbo.json",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [
+    {
+     "name": "contracts",
+     "type": "tree"
+    }
+   ],
+   "stars": 2,
+   "topics": [],
+   "workflows": [
+    {
+     "name": "ci.yml",
+     "text": "name: ci-0\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: pnpm build\n      - run: pnpm test"
+    }
+   ]
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-24T13:31:37Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-24T13:31:37Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-24T13:31:37Z"
+    },
+    {
+     "conclusion": "SUCCESS",
+     "updatedAt": "2026-08-24T13:31:41Z"
+    },
+    {
+     "conclusion": "SUCCESS",
+     "updatedAt": "2026-08-24T13:31:57Z"
+    }
+   ],
+   "closedIssues": 112,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    null,
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed",
+    "lorem ipsum dolor sit amet consectetur adipiscing elit sed"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 355,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": false,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": null,
+   "forks": 0,
+   "githubTree": [
+    {
+     "name": "dependabot.yml",
+     "type": "blob"
+    },
+    {
+     "name": "scripts",
+     "type": "tree"
+    },
+    {
+     "name": "workflows",
+     "type": "tree"
+    }
+   ],
+   "homepageUrl": null,
+   "isArchived": true,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": true,
+   "languages": [
+    {
+     "name": "TypeScript",
+     "size": 905147
+    },
+    {
+     "name": "JavaScript",
+     "size": 4467
+    }
+   ],
+   "lastCommitAt": "2026-08-24T13:31:34Z",
+   "latestReleaseAt": "2026-05-15T15:13:08Z",
+   "latestReleaseTag": "v0.7.6",
+   "licenseSpdxId": null,
+   "name": "agent-sdk",
+   "openIssues": 69,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "TypeScript",
+   "projectType": "library",
+   "prominence": 3,
+   "readme": {
+    "byteSize": 10764,
+    "path": "README.md",
+    "text": "# agent-sdk\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```bash\npnpm install\n```\n\n```bash\ndocker compose up\n```\n\n```ts\nconst x2 = 2;\n```\n\n```ts\nconst x3 = 3;\n```\n\n```ts\nconst x4 = 4;\n```\n\n```ts\nconst x5 = 5;\n```\n\n```ts\nconst x6 = 6;\n```\n\n```ts\nconst x7 = 7;\n```\n\n```ts\nconst x8 = 8;\n```\n\n```ts\nconst x9 = 9;\n```\n\n```ts\nconst x10 = 10;\n```\n\n```ts\nconst x11 = 11;\n```\n\n```ts\nconst x12 = 12;\n```\n\n```ts\nconst x13 = 13;\n```\n\n```ts\nconst x14 = 14;\n```\n\n```ts\nconst x15 = 15;\n```\n\n```ts\nconst x16 = 16;\n```\n\n```ts\nconst x17 = 17;\n```\n\n```ts\nconst x18 = 18;\n```\n\n```ts\nconst x19 = 19;\n```\n\n```ts\nconst x20 = 20;\n```\n\n```ts\nconst x21 = 21;\n```\n\n```ts\nconst x22 = 22;\n```\n\n```ts\nconst x23 = 23;\n```\n\n```ts\nconst x24 = 24;\n```\n\n```ts\nconst x25 = 25;\n```\n\n```ts\nconst x26 = 26;\n```\n\n```ts\nconst x27 = 27;\n```\n\n```ts\nconst x28 = 28;\n```\n\n```ts\nconst x29 = 29;\n```\n\n```ts\nconst x30 = 30;\n```\n\n```ts\nconst x31 = 31;\n```\n\n```ts\nconst x32 = 32;\n```\n\n```ts\nconst x33 = 33;\n```\n\n```ts\nconst x34 = 34;\n```\n\n```ts\nconst x35 = 35;\n```\n\n```ts\nconst x36 = 36;\n```\n\n```ts\nconst x37 = 37;\n```\n\n```ts\nconst x38 = 38;\n```\n\n```ts\nconst x39 = 39;\n```\n\n```ts\nconst x40 = 40;\n```\n\n```ts\nconst x41 = 41;\n```\n\n```ts\nconst x42 = 42;\n```\n\n```ts\nconst x43 = 43;\n```\n\n```ts\nconst x44 = 44;\n```\n\n```ts\nconst x45 = 45;\n```\n\n```ts\nconst x46 = 46;\n```\n\n```ts\nconst x47 = 47;\n```\n\n```ts\nconst x48 = 48;\n```\n\n```ts\nconst x49 = 49;\n```\n\n```ts\nconst x50 = 50;\n```\n\n```ts\nconst x51 = 51;\n```\n\n```ts\nconst x52 = 52;\n```\n\n```ts\nconst x53 = 53;\n```\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)"
+   },
+   "releasesCount": 36,
+   "rootTree": [
+    {
+     "name": ".github",
+     "type": "tree"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".husky",
+     "type": "tree"
+    },
+    {
+     "name": ".jscpd.json",
+     "type": "blob"
+    },
+    {
+     "name": ".lintstagedrc.json",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierignore",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierrc.json",
+     "type": "blob"
+    },
+    {
+     "name": ".release-please-config.json",
+     "type": "blob"
+    },
+    {
+     "name": ".release-please-manifest.json",
+     "type": "blob"
+    },
+    {
+     "name": ".semgrepignore",
+     "type": "blob"
+    },
+    {
+     "name": ".size-limit.json",
+     "type": "blob"
+    },
+    {
+     "name": "CHANGELOG.md",
+     "type": "blob"
+    },
+    {
+     "name": "CLAUDE.md",
+     "type": "blob"
+    },
+    {
+     "name": "commitlint.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "documentation",
+     "type": "tree"
+    },
+    {
+     "name": "eslint.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "examples",
+     "type": "tree"
+    },
+    {
+     "name": "GUIDE.md",
+     "type": "blob"
+    },
+    {
+     "name": "knip.json",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "pnpm-lock.yaml",
+     "type": "blob"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    },
+    {
+     "name": "src",
+     "type": "tree"
+    },
+    {
+     "name": "stryker.config.json",
+     "type": "blob"
+    },
+    {
+     "name": "tests",
+     "type": "tree"
+    },
+    {
+     "name": "tsconfig.eslint.json",
+     "type": "blob"
+    },
+    {
+     "name": "tsconfig.json",
+     "type": "blob"
+    },
+    {
+     "name": "typedoc.json",
+     "type": "blob"
+    },
+    {
+     "name": "vitest.config.ts",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [
+    {
+     "name": "agent.ts",
+     "type": "blob"
+    },
+    {
+     "name": "config",
+     "type": "tree"
+    },
+    {
+     "name": "contracts",
+     "type": "tree"
+    },
+    {
+     "name": "core",
+     "type": "tree"
+    },
+    {
+     "name": "index.ts",
+     "type": "blob"
+    },
+    {
+     "name": "knowledge",
+     "type": "tree"
+    },
+    {
+     "name": "llm",
+     "type": "tree"
+    },
+    {
+     "name": "memory",
+     "type": "tree"
+    },
+    {
+     "name": "skills",
+     "type": "tree"
+    },
+    {
+     "name": "storage",
+     "type": "tree"
+    },
+    {
+     "name": "tools",
+     "type": "tree"
+    },
+    {
+     "name": "utils",
+     "type": "tree"
+    }
+   ],
+   "stars": 1,
+   "topics": [],
+   "workflows": [
+    {
+     "name": "codeql.yml",
+     "text": "name: ci-0\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: echo ok"
+    },
+    {
+     "name": "mutation.yml",
+     "text": "name: ci-1\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: pnpm test"
+    },
+    {
+     "name": "pr-check.yml",
+     "text": "name: ci-2\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: pnpm build\n      - run: pnpm test"
+    },
+    {
+     "name": "release.yml",
+     "text": "name: ci-3\non: push\njobs:\n  main:\n    runs-on: ubuntu-latest\n    steps:\n      - run: pnpm build\n      - run: pnpm test"
+    }
+   ]
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 0,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": true,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "master",
+   "description": null,
+   "forks": 0,
+   "githubTree": [],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": false,
+   "languages": [
+    {
+     "name": "JavaScript",
+     "size": 10514
+    }
+   ],
+   "lastCommitAt": "2019-05-31T21:14:10Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": "MIT",
+   "name": "bake-cli",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "JavaScript",
+   "projectType": "cli",
+   "prominence": 1,
+   "readme": {
+    "byteSize": 629,
+    "path": "readme.md",
+    "text": "# bake-cli\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n```ts\nconst x0 = 0;\n```\n"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": "__tests__",
+     "type": "tree"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": "bin",
+     "type": "tree"
+    },
+    {
+     "name": "docs",
+     "type": "tree"
+    },
+    {
+     "name": "LICENSE",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "readme.md",
+     "type": "blob"
+    },
+    {
+     "name": "src",
+     "type": "tree"
+    },
+    {
+     "name": "yarn.lock",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [
+    {
+     "name": "cli.js",
+     "type": "blob"
+    },
+    {
+     "name": "commands",
+     "type": "tree"
+    },
+    {
+     "name": "extensions",
+     "type": "tree"
+    },
+    {
+     "name": "templates",
+     "type": "tree"
+    }
+   ],
+   "stars": 2,
+   "topics": [],
+   "workflows": []
+  },
+  {
+   "architectureDoc": null,
+   "checkSuites": [
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-20T18:02:10Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-20T18:02:10Z"
+    },
+    {
+     "conclusion": null,
+     "updatedAt": "2026-08-20T18:02:11Z"
+    }
+   ],
+   "closedIssues": 0,
+   "commitAuthors": [
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example",
+    "octo-example"
+   ],
+   "commitHeadlines": [
+    "lorem ipsum",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "feat: lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing",
+    "lorem ipsum dolor sit amet consectetur adipiscing"
+   ],
+   "commitOid": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "commitsLast365": 0,
+   "community": {
+    "codeOfConduct": false,
+    "contributing": false,
+    "issueTemplate": false,
+    "license": false,
+    "pullRequestTemplate": false,
+    "securityPolicy": false
+   },
+   "defaultBranch": "main",
+   "description": null,
+   "forks": 0,
+   "githubTree": [],
+   "homepageUrl": null,
+   "isArchived": false,
+   "isEmpty": false,
+   "isFork": false,
+   "isPinned": false,
+   "languages": [
+    {
+     "name": "TypeScript",
+     "size": 1814937
+    },
+    {
+     "name": "JavaScript",
+     "size": 11908
+    },
+    {
+     "name": "CSS",
+     "size": 8255
+    }
+   ],
+   "lastCommitAt": "2024-10-31T14:32:58Z",
+   "latestReleaseAt": null,
+   "latestReleaseTag": null,
+   "licenseSpdxId": null,
+   "name": "landing",
+   "openIssues": 0,
+   "otherCiFiles": [],
+   "owner": "octo-example",
+   "primaryLanguage": "TypeScript",
+   "projectType": "web",
+   "prominence": 1,
+   "readme": {
+    "byteSize": 3406,
+    "path": "README.md",
+    "text": "# landing\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n![lorem ipsum](./docs/img-0.png)\n\n![lorem ipsum](./docs/img-1.png)\n\n![lorem ipsum](./docs/img-2.png)\n\n![lorem ipsum](./docs/img-3.png)\n\n```bash\npnpm install\n```\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)\n[lorem ipsum](./docs/2.md)\n[lorem ipsum](./docs/3.md)\n[lorem ipsum](./docs/4.md)\n[lorem ipsum](./docs/5.md)\n[lorem ipsum](./docs/6.md)\n[lorem ipsum](./docs/7.md)\n[lorem ipsum](./docs/8.md)\n[lorem ipsum](./docs/9.md)\n[lorem ipsum](./docs/10.md)\n[lorem ipsum](./docs/11.md)\n[lorem ipsum](./docs/12.md)\n[lorem ipsum](./docs/13.md)\n[lorem ipsum](./docs/14.md)\n[lorem ipsum](./docs/15.md)\n[lorem ipsum](./docs/16.md)\n[lorem ipsum](./docs/17.md)\n[lorem ipsum](./docs/18.md)\n[lorem ipsum](./docs/19.md)\n[lorem ipsum](./docs/20.md)\n[lorem ipsum](./docs/21.md)\n[lorem ipsum](./docs/22.md)\n[lorem ipsum](./docs/23.md)\n[lorem ipsum](./docs/24.md)\n[lorem ipsum](./docs/25.md)\n[lorem ipsum](./docs/26.md)\n[lorem ipsum](./docs/27.md)\n[lorem ipsum](./docs/28.md)\n[lorem ipsum](./docs/29.md)\n[lorem ipsum](./docs/30.md)\n[lorem ipsum](./docs/31.md)\n[lorem ipsum](./docs/32.md)\n[lorem ipsum](./docs/33.md)\n[lorem ipsum](./docs/34.md)\n[lorem ipsum](./docs/35.md)\n[lorem ipsum](./docs/36.md)\n[lorem ipsum](./docs/37.md)\n[lorem ipsum](./docs/38.md)\n[lorem ipsum](./docs/39.md)\n[lorem ipsum](./docs/40.md)\n[lorem ipsum](./docs/41.md)\n[lorem ipsum](./docs/42.md)\n[lorem ipsum](./docs/43.md)\n[lorem ipsum](./docs/44.md)\n[lorem ipsum](./docs/45.md)\n[lorem ipsum](./docs/46.md)\n[lorem ipsum](./docs/47.md)\n[lorem ipsum](./docs/48.md)\n[lorem ipsum](./docs/49.md)\n[lorem ipsum](./docs/50.md)\n[lorem ipsum](./docs/51.md)"
+   },
+   "releasesCount": 0,
+   "rootTree": [
+    {
+     "name": ".env.example",
+     "type": "blob"
+    },
+    {
+     "name": ".env.local",
+     "type": "blob"
+    },
+    {
+     "name": ".eslintrc.json",
+     "type": "blob"
+    },
+    {
+     "name": ".gitignore",
+     "type": "blob"
+    },
+    {
+     "name": ".npmrc",
+     "type": "blob"
+    },
+    {
+     "name": ".prettierignore",
+     "type": "blob"
+    },
+    {
+     "name": "app",
+     "type": "tree"
+    },
+    {
+     "name": "components",
+     "type": "tree"
+    },
+    {
+     "name": "components.json",
+     "type": "blob"
+    },
+    {
+     "name": "jobs",
+     "type": "tree"
+    },
+    {
+     "name": "lib",
+     "type": "tree"
+    },
+    {
+     "name": "list.txt",
+     "type": "blob"
+    },
+    {
+     "name": "middleware.ts",
+     "type": "blob"
+    },
+    {
+     "name": "next-env.d.ts",
+     "type": "blob"
+    },
+    {
+     "name": "next.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "package.json",
+     "type": "blob"
+    },
+    {
+     "name": "postcss.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "prettier.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "prisma",
+     "type": "tree"
+    },
+    {
+     "name": "public",
+     "type": "tree"
+    },
+    {
+     "name": "README.md",
+     "type": "blob"
+    },
+    {
+     "name": "styles",
+     "type": "tree"
+    },
+    {
+     "name": "tailwind.config.js",
+     "type": "blob"
+    },
+    {
+     "name": "trigger.ts",
+     "type": "blob"
+    },
+    {
+     "name": "tsconfig.json",
+     "type": "blob"
+    },
+    {
+     "name": "vercel.json",
+     "type": "blob"
+    }
+   ],
+   "srcTree": [],
+   "stars": 1,
+   "topics": [],
+   "workflows": []
+  }
+ ],
+ "scanAt": "2026-09-04T18:00:00.000Z"
+}
