@@ -1,0 +1,92 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event session-start --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event subagent-stop --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event pre-tool-use --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event post-tool-use --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event pre-compact --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event stop --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event session-end --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Applications/Terminal AI.app/Contents/MacOS/ai-memory' --data-dir '/Users/douglasprado/Library/Application Support/ai-memory' hook --event subagent-start --agent claude-code --server-url http://127.0.0.1:49374 --project-strategy repo-root"
+          }
+        ]
+      }
+    ]
+  }
+}

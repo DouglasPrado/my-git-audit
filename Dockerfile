@@ -1,5 +1,10 @@
 # syntax=docker/dockerfile:1.7
 # Imagem do app web. Um deployable só — ADR-0001.
+#
+# Fica na RAIZ de propósito: o contexto de build precisa ser o repositório
+# inteiro (o estágio de deps copia os manifestos de todo o workspace), e é isso
+# que a detecção padrão do EasyPanel assume. Movê-lo para apps/web exigiria
+# configurar `buildFile` no painel.
 
 FROM node:24-alpine AS base
 ENV PNPM_HOME=/pnpm PATH=/pnpm:$PATH

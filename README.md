@@ -32,8 +32,14 @@ repositórios fixados:
 | `.DS_Store` versionado | **2 de 6** |
 | Arquivado, sem dizer por quê | **1 de 6** |
 
-No portfólio inteiro: **92 repositórios próprios**, dos quais **8 (9%)** não têm descrição, nem
-README, nem topics, nem 10 arquivos.
+No portfólio público: **27 repositórios**, dos quais uma parte não tem descrição, nem README, nem
+topics, nem 10 arquivos.
+
+> Esta medição foi refeita depois de uma correção importante no coletor. A primeira versão pedia
+> `ownerAffiliations: OWNER` sem filtro de privacidade — e um token com escopo `repo` faz o GitHub
+> devolver os repositórios **privados** junto. Contava 92 onde havia 27 públicos. A query agora pede
+> `privacy: PUBLIC`, e o normalizador descarta qualquer repositório marcado como privado por
+> segunda barreira. Análise de repositório privado é o Épico 10, e exige consentimento explícito.
 
 A métrica oficial do GitHub diz que está tudo certo. Um engenheiro que abrisse esse perfil por
 trinta segundos discordaria. Essa diferença é o produto.

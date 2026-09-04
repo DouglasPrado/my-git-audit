@@ -32,13 +32,22 @@ export const PHASE1_DISCOVER = /* GraphQL */ `
         first: 100
         after: $after
         isFork: false
+        # SOMENTE PUBLICOS, e isto nao e redundante.
+        #
+        # Um token com escopo repo faz esta query devolver repositorios
+        # PRIVADOS do dono. Numa instancia sem autenticacao, que roda com token
+        # de servidor, isso entregaria nome, descricao, README e arvore de repo
+        # privado a qualquer visitante que digitasse o login certo.
+        #
+        # Repositorio privado e o Epico 10 e exige consentimento por repositorio.
+        privacy: PUBLIC
         ownerAffiliations: OWNER
         orderBy: { field: PUSHED_AT, direction: DESC }
       ) {
         totalCount
         pageInfo { hasNextPage endCursor }
         nodes {
-          name description isFork isArchived isEmpty stargazerCount pushedAt
+          name description isFork isArchived isEmpty isPrivate stargazerCount pushedAt
           repositoryTopics(first: 1) { totalCount }
           root: object(expression: "HEAD:") { ... on Tree { entries { name type } } }
         }

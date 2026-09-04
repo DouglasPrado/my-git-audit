@@ -42,6 +42,8 @@ const OTHER_CI = ['.circleci', '.gitlab-ci.yml', 'jenkinsfile', '.travis.yml', '
 /** Forma leve devolvida pela fase de descoberta — o suficiente para selecionar. */
 export interface DiscoverRepo {
   name: string;
+  /** Presente quando a API o informa. Ver a guarda em `selectRepositories`. */
+  isPrivate?: boolean;
   description: string | null;
   isFork: boolean;
   isArchived: boolean;
@@ -74,6 +76,10 @@ export function selectRepositories(
   const eligible: DiscoverRepo[] = [];
 
   for (const r of repos) {
+    // Guarda em profundidade: a query já pede `privacy: PUBLIC`, mas um token
+    // com escopo `repo` transforma um descuido de query em vazamento. Duas
+    // barreiras, porque o custo de errar aqui não é uma nota errada.
+    if (r.isPrivate) { excluded.push({ name: r.name, reason: 'privado — não avaliado' }); continue; }
     if (r.isFork) { excluded.push({ name: r.name, reason: 'fork' }); continue; }
     if (isTrivial(r)) { excluded.push({ name: r.name, reason: 'vazio ou trivial demais para avaliar' }); continue; }
     eligible.push(r);
