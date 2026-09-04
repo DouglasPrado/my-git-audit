@@ -1,6 +1,6 @@
 import { evidenceId, subjectKey } from '@audit/contracts';
 import type { Grader } from '../rubric/types';
-import { band, bandDesc, readmeMetrics, result } from './helpers';
+import { band, readmeMetrics, result } from './helpers';
 
 const pKey = (login: string) => subjectKey({ kind: 'profile', login });
 const pev = (login: string, kind: Parameters<typeof evidenceId>[1], sel: string) =>
@@ -59,14 +59,50 @@ export const PROFILE_IDENTITY_COMPLETE: Grader = ({ facts }) => {
   );
 };
 
-export const PROFILE_CONTACT_CHANNELS: Grader = ({ facts }) => {
+/**
+ * Canal de contato é avaliado SEPARADAMENTE por canal, não por contagem.
+ *
+ * Um site e um LinkedIn dizem coisas diferentes a quem lê: um mostra o que a
+ * pessoa faz, o outro permite chegar até ela. Somá-los num número só esconde
+ * qual está faltando — e a recomendação fica genérica demais para ser útil.
+ */
+export const PROFILE_WEBSITE: Grader = ({ facts }) => {
   const p = facts.profile;
-  const n = (p.websiteUrl ? 1 : 0) + p.socialAccounts + (p.email ? 1 : 0);
-  return result(
-    bandDesc(n, [[2, 1], [1, 0.5], [0, 0]]),
-    `${n} canal(is) de contato público(s)`,
-    [pev(p.login, 'profile.field', 'contact')],
-  );
+  const id = pev(p.login, 'profile.field', 'websiteUrl');
+  if (!p.websiteUrl) return result(0, 'Sem site no perfil', [id]);
+  return result(1, `Site declarado: ${p.websiteUrl}`, [id]);
+};
+
+const PROFISSIONAIS = new Set(['LINKEDIN', 'GENERIC']);
+
+export const PROFILE_SOCIAL: Grader = ({ facts }) => {
+  const p = facts.profile;
+  const id = pev(p.login, 'profile.field', 'socialAccounts');
+  const linkedin = p.socialAccounts.find((s) => s.provider.toUpperCase() === 'LINKEDIN');
+  if (linkedin) return result(1, 'LinkedIn vinculado ao perfil', [id]);
+  const outra = p.socialAccounts.find((s) => PROFISSIONAIS.has(s.provider.toUpperCase()) || s.url.length > 0);
+  if (outra) return result(0.6, `Rede vinculada: ${outra.provider.toLowerCase()} — sem LinkedIn`, [id]);
+  return result(0, 'Nenhuma rede vinculada ao perfil', [id]);
+};
+
+export const PROFILE_EMAIL: Grader = ({ facts }) => {
+  const p = facts.profile;
+  const id = pev(p.login, 'profile.field', 'email');
+  if (p.email) return result(1, 'E-mail público no perfil', [id]);
+  // Não é falha grave: muita gente omite e-mail de propósito, e o LinkedIn
+  // resolve o contato. Por isso a nota parcial quando há outro canal.
+  const temOutro = Boolean(p.websiteUrl) || p.socialAccounts.length > 0;
+  return result(temOutro ? 0.4 : 0, temOutro ? 'Sem e-mail público, mas há outro canal de contato' : 'Nenhuma forma de contato no perfil', [id]);
+};
+
+/** A descrição do repositório de perfil é a vitrine ANTES do README. */
+export const PROFILE_REPO_DESCRIPTION: Grader = ({ facts }) => {
+  const p = facts.profile;
+  const id = pev(p.login, 'repo.field', 'profile-repo.description');
+  if (!p.profileReadmeRepoExists) return result(0, `Não existe o repositório de perfil \`${p.login}/${p.login}\``, [id]);
+  const d = p.profileRepoDescription?.trim() ?? '';
+  if (!d) return result(0, 'O repositório de perfil não tem descrição', [id]);
+  return result(d.length >= 20 ? 1 : 0.5, `Repositório de perfil descrito em ${d.length} caracteres`, [id]);
 };
 
 /**

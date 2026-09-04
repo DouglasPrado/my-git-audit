@@ -1,0 +1,25 @@
+{
+  "name": "@audit/insight",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@audit/kernel": "workspace:*",
+    "@audit/contracts": "workspace:*",
+    "@gba/ai-harness": "^2.1.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.11",
+    "@audit/scoring": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  }
+}

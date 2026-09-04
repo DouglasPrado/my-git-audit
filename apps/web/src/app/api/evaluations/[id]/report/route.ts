@@ -22,11 +22,15 @@ export async function GET(request: Request, ctx: { params: Promise<{ id: string 
   const asked = url.searchParams.get('persona');
   const persona: PersonaId = PERSONAS.includes(asked as PersonaId) ? (asked as PersonaId) : evaluation.persona;
 
-  const breakdown = persona === evaluation.persona ? evaluation.score : score(evaluation.facts, rubricV1, persona);
+  // Os sinais interpretativos são coletados uma vez e reaproveitados: trocar de
+  // persona não refaz o scan nem paga o modelo de novo.
+  const signals = new Map(evaluation.signals.map((s) => [s.code, s]));
+  const breakdown =
+    persona === evaluation.persona ? evaluation.score : score(evaluation.facts, rubricV1, persona, signals);
   const recs =
     persona === evaluation.persona && evaluation.recommendations
       ? evaluation.recommendations
-      : recommend(evaluation.facts, rubricV1, persona, breakdown);
+      : recommend(evaluation.facts, rubricV1, persona, breakdown, signals);
 
   return NextResponse.json({
     id: evaluation.id,
@@ -38,6 +42,8 @@ export async function GET(request: Request, ctx: { params: Promise<{ id: string 
       totalRepos: evaluation.facts.portfolio.totalOwnRepos,
     },
     scanAt: evaluation.facts.scanAt,
+    interpreterVersion: evaluation.interpreterVersion,
+    narrative: evaluation.narrative,
     score: breakdown,
     recommendations: recs,
   });

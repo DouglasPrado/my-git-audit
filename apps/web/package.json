@@ -13,9 +13,11 @@
   "dependencies": {
     "@audit/collection": "workspace:*",
     "@audit/contracts": "workspace:*",
+    "@audit/insight": "workspace:*",
     "@audit/kernel": "workspace:*",
     "@audit/reporting": "workspace:*",
     "@audit/scoring": "workspace:*",
+    "@gba/ai-harness": "^2.1.0",
     "@gba/components": "^0.1.65",
     "clsx": "^2.1.1",
     "next": "^16.3.0",

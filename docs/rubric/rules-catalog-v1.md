@@ -53,10 +53,20 @@
 | 9 | `PORTFOLIO_NOISE_RATIO` | portfolio | S | Razão de repositórios sem descrição, sem README, ≤1 topic e <10 arquivos | |
 | 10 | `PORTFOLIO_ARCHIVE_HYGIENE` | portfolio | S | `isArchived` em repositórios parados há >24 meses | |
 | 11 | `PORTFOLIO_TYPE_DIVERSITY` | portfolio | S | Contagem de `ProjectType` distintos entre os selecionados | |
+| 11a | `PINNED_SELF_EXPLANATORY` | portfolio | S | De cada fixado **público**: tem descrição? tem README? | |
 
 **Falsos positivos:**
 
 - **(7) Gists fixados inflam `pinnedItems.totalCount`.** Filtrar a nós `Repository`.
+- **(11a)** Fixado **privado** não é falta de cuidado — é escolha. São filtrados antes da contagem,
+  senão quem fixa um repositório privado seria punido por algo invisível ao público.
+- **(42b) O e-mail vem do REST, não do GraphQL, e isso é deliberado.** O campo `email` no GraphQL
+  exige escopo `read:user`, e a query inteira falha sem ele. Pedir essa permissão só para checar
+  "tem canal de contato" é uma troca ruim. O REST `/users/{login}` devolve o e-mail **público**
+  sem escopo extra — e `null` para quem não publicou, que é a resposta certa.
+- **(42b)** Ausência de e-mail **não** é falha grave: muita gente o omite de propósito e o LinkedIn
+  resolve o contato. Por isso a nota é parcial quando há outro canal, e zero só quando não há
+  nenhum.
 - **(8)** Gente fixa por motivo narrativo, não por nota. Só dispara quando um não-fixado supera a
   mediana dos fixados por mais de 15 pontos; severidade `low`, redigido como sugestão.
 - **(9)** Repositório de rascunho público é legítimo. Só conta acima de 20% do total, com
@@ -206,7 +216,9 @@ Faixas de `COMMIT_RECENCY` — tabela, não fórmula (ver [`rubric-v1.md` §11](
 | --: | --- | --- | :-: | --- | :-: |
 | 40 | `REPO_DESCRIPTION` | repo-agg | S | `repository.description` — 0 / <20 chars 0.4 / 1.0 | |
 | 41 | `REPO_TOPICS` | repo-agg | S | `repositoryTopics` — 0 / 1–2 → 0.5 / ≥3 → 1.0 | |
-| 42 | `PROFILE_CONTACT_CHANNELS` | profile | S | `websiteUrl`, `socialAccounts`, `email` — 0 / 1 / ≥2 | |
+| 42 | `PROFILE_WEBSITE` | profile | S | `user.websiteUrl` | |
+| 42a | `PROFILE_SOCIAL` | profile | S | `socialAccounts { provider url }` — LinkedIn vale cheio; outra rede, 0.6 | |
+| 42b | `PROFILE_EMAIL` | profile | S | `email` do REST `/users/{login}` | |
 | 43 | `REPO_HOMEPAGE_URL` | repo-agg | S | `homepageUrl`, metadados de pacote | |
 
 Sem risco relevante de falso positivo. São os achados mais baratos de corrigir e os de maior razão

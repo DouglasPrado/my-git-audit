@@ -23,9 +23,13 @@ interface Phase1Data {
   user: {
     __typename: string; login: string; name: string | null; bio: string | null;
     websiteUrl: string | null; location: string | null; company: string | null;
-    followers: { totalCount: number }; socialAccounts: { totalCount: number };
-    profileRepo: { name: string; defaultBranchRef: { target: { oid: string } | null } | null; object: { entries?: { name: string; type: string }[] } | null } | null;
-    pinnedItems: { totalCount: number; nodes: { name: string }[] };
+    followers: { totalCount: number };
+    socialAccounts: { nodes: { provider: string; url: string }[] };
+    profileRepo: { name: string; description: string | null; defaultBranchRef: { target: { oid: string } | null } | null; object: { entries?: { name: string; type: string }[] } | null } | null;
+    pinnedItems: {
+      totalCount: number;
+      nodes: { name: string; description: string | null; isPrivate: boolean; root: { entries?: { name: string; type: string }[] } | null }[];
+    };
     contributionsCollection: {
       pullRequestContributionsByRepository: { repository: { owner: { login: string } }; contributions: { totalCount: number } }[];
     };
@@ -168,14 +172,30 @@ export async function collect(
       if (blob) profileReadme = { path: profileReadmePath.path, text: blob.text, byteSize: blob.byteSize };
     }
   }
+  const pub = await client.publicProfile(login);
   emit({ type: 'profile.collected', login, hasProfileReadme: !!profileReadme });
 
   const profile: ProfileFacts = {
     login: u.login, name: u.name, bio: u.bio, websiteUrl: u.websiteUrl,
-    location: u.location, company: u.company, email: null,
-    followers: u.followers.totalCount, socialAccounts: u.socialAccounts.totalCount,
-    profileReadme, profileReadmeRepoExists: !!u.profileRepo,
+    location: u.location, company: u.company, email: pub.ok ? pub.value.email : null,
+    followers: u.followers.totalCount,
+    socialAccounts: [
+      ...u.socialAccounts.nodes.map((n) => ({ provider: n.provider, url: n.url })),
+      ...(pub.ok && pub.value.twitter ? [{ provider: 'TWITTER', url: `https://x.com/${pub.value.twitter}` }] : []),
+    ],
+    profileReadme,
+    profileReadmeRepoExists: !!u.profileRepo,
+    profileRepoDescription: u.profileRepo?.description ?? null,
     pinnedCount: u.pinnedItems.totalCount,
+    // A vitrine avaliada como vitrine: só os fixados públicos contam, e o que
+    // interessa neles é se cada um se explica sozinho.
+    pinned: u.pinnedItems.nodes
+      .filter((n) => !n.isPrivate)
+      .map((n) => ({
+        name: n.name,
+        hasDescription: Boolean(n.description?.trim()),
+        hasReadme: resolveReadme(asEntries(n.root)) !== null,
+      })),
   };
 
   const now = Date.parse(scanAt);

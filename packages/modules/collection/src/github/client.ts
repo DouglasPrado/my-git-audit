@@ -72,6 +72,28 @@ export class GitHubClient {
     return this.graphql<Record<string, unknown>>(buildBlobs(targets));
   }
 
+  /**
+   * Perfil público via REST.
+   *
+   * Existe por causa do e-mail: o campo `email` no GraphQL exige escopo
+   * `read:user`, e pedir essa permissão só para checar "tem canal de contato"
+   * é uma troca ruim — pior, a query GraphQL inteira falha sem ela. O REST
+   * devolve o e-mail PÚBLICO sem escopo extra, e null para quem não publicou.
+   */
+  async publicProfile(login: string): Promise<Result<{ email: string | null; twitter: string | null }, CollectError>> {
+    try {
+      const res = await this.#fetch(`${REST}/users/${encodeURIComponent(login)}`, {
+        headers: { authorization: `bearer ${this.#token}`, accept: 'application/vnd.github+json', 'user-agent': this.#ua },
+      });
+      if (res.status === 401) return err({ kind: 'token_invalid' });
+      if (!res.ok) return ok({ email: null, twitter: null });
+      const body = (await res.json()) as { email?: string | null; twitter_username?: string | null };
+      return ok({ email: body.email ?? null, twitter: body.twitter_username ?? null });
+    } catch {
+      return ok({ email: null, twitter: null });
+    }
+  }
+
   /** `/community/profile` resolve a maior parte de OSS numa chamada barata. */
   async communityProfile(owner: string, repo: string): Promise<Result<Record<string, unknown>, CollectError>> {
     try {

@@ -3,6 +3,8 @@ import type { ScanEvent } from '@audit/collection';
 import type { ScoreBreakdown } from '@audit/scoring';
 import type { RecommendationSet } from '@audit/reporting';
 import type { PersonaId } from '@audit/scoring';
+import type { InterpretedProfile } from '@audit/insight';
+import type { Signal } from '@audit/contracts';
 
 export type EvaluationStatus = 'queued' | 'running' | 'completed' | 'failed';
 
@@ -17,6 +19,10 @@ export interface Evaluation {
   facts: Facts | null;
   score: ScoreBreakdown | null;
   recommendations: RecommendationSet | null;
+  /** O "10 Second Test". Narrativa exibida; nunca entra na nota. */
+  narrative: InterpretedProfile | null;
+  signals: Signal[];
+  interpreterVersion: string | null;
   error: { kind: string; message: string } | null;
 }
 

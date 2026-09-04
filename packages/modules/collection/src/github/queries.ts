@@ -12,15 +12,23 @@ export const PHASE1_DISCOVER = /* GraphQL */ `
       __typename
       login name bio websiteUrl location company createdAt
       followers { totalCount }
-      socialAccounts(first: 10) { totalCount }
+      socialAccounts(first: 10) { nodes { provider url } }
       profileRepo: repository(name: $login) {
         name
+        description
         defaultBranchRef { target { ... on Commit { oid } } }
         object(expression: "HEAD:") { ... on Tree { entries { name type } } }
       }
       pinnedItems(first: 6, types: REPOSITORY) {
         totalCount
-        nodes { ... on Repository { name } }
+        nodes {
+          ... on Repository {
+            name
+            description
+            isPrivate
+            root: object(expression: "HEAD:") { ... on Tree { entries { name type } } }
+          }
+        }
       }
       contributionsCollection {
         pullRequestContributionsByRepository(maxRepositories: 50) {

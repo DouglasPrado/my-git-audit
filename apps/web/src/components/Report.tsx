@@ -7,7 +7,9 @@ import { PersonaReadings } from './PersonaReadings';
 import { Progress } from './Progress';
 import { Recommendations } from './Recommendations';
 import { RepoTable } from './RepoTable';
+import { TenSecondTest, type Narrative } from './TenSecondTest';
 import { Figure } from './Figure';
+import { Wordmark } from './Wordmark';
 
 const CATEGORY_LABEL: Record<string, string> = {
   ENG: 'Engineering Signals',
@@ -26,6 +28,8 @@ const EVENT_COPY: Record<string, (e: Record<string, unknown>) => string> = {
   'repository.analyzed': (e) => `Analisando ${e['index']}/${e['total']} — ${String(e['name'])}`,
   'profile.collected': (e) => (e['hasProfileReadme'] ? 'Profile README encontrado' : 'Perfil sem README'),
   'static.completed': (e) => `Evidências coletadas em ${e['repositories']} repositórios`,
+  'semantic.completed': (e) =>
+    `Interpretação semântica: ${e['signalsCount']} sinal(is)${e['cacheHits'] ? `, ${e['cacheHits']} de cache` : ''}`,
   'scoring.completed': () => 'Calculando a nota',
   'scan.degraded': (e) => `Seguindo com menos confiança — ${String(e['reason'])}`,
 };
@@ -34,6 +38,8 @@ interface ReportData {
   login: string;
   profile: { name: string | null; bio: string | null; totalRepos: number };
   scanAt: string;
+  interpreterVersion: string | null;
+  narrative: Narrative | null;
   score: {
     overall: number;
     personaId: string;
@@ -112,14 +118,22 @@ export function Report({ id }: { id: string }) {
 
   if (error) {
     return (
-      <main className="mx-auto max-w-(--container-prose) px-5 py-24">
-        <Alert variant="destructive">
-          <AlertDescription className="text-[0.9375rem]">{error}</AlertDescription>
-        </Alert>
-        <Button asChild variant="outline" className="mt-6">
-          <a href="/">Auditar outro perfil</a>
-        </Button>
-      </main>
+      <div className="min-h-dvh">
+        <header className="rule-b">
+          <div className="mx-auto flex max-w-(--container-sheet) items-center justify-between gap-4 px-5 py-4">
+            <Wordmark />
+            <p className="figure text-[0.75rem] text-ink-faint">rubrica v1.0.0</p>
+          </div>
+        </header>
+        <main className="mx-auto max-w-(--container-prose) px-5 py-24">
+          <Alert variant="destructive">
+            <AlertDescription className="text-[0.9375rem]">{error}</AlertDescription>
+          </Alert>
+          <Button asChild variant="outline" className="mt-6 border-rule-edge">
+            <a href="/">Auditar outro perfil</a>
+          </Button>
+        </main>
+      </div>
     );
   }
 
@@ -130,26 +144,34 @@ export function Report({ id }: { id: string }) {
     .sort((a, b) => b.weight - a.weight || a.label.localeCompare(b.label));
 
   return (
-    <main className="mx-auto max-w-(--container-sheet) px-5 py-14 sm:py-16">
-      <a href="/" className="figure text-[0.75rem] uppercase tracking-[0.1em] text-ink-soft hover:text-ink">
-        ← Profile Auditor
-      </a>
+    <div className="min-h-dvh">
+      <header className="rule-b">
+        <div className="mx-auto flex max-w-(--container-sheet) items-center justify-between gap-4 px-5 py-4">
+          <Wordmark />
+          <p className="figure text-[0.75rem] text-ink-faint">rubrica v1.0.0</p>
+        </div>
+      </header>
 
-      <header className="mt-10 grid gap-6 sm:grid-cols-[1fr_auto] sm:items-end">
+      <main className="relative mx-auto max-w-(--container-sheet) px-5 pt-14 pb-14 sm:pt-16">
+        <span aria-hidden className="halo -z-10" />
+
+        <header className="grid gap-6 sm:grid-cols-[1fr_auto] sm:items-end">
         <div>
-          <h1 className="text-display font-semibold tracking-[-0.02em]">{data.profile.name ?? data.login}</h1>
+          <h1 className="display text-display">{data.profile.name ?? data.login}</h1>
           <p className="figure mt-1 text-[0.875rem] text-ink-soft">
             {data.login} · <Figure value={data.profile.totalRepos} /> repositórios próprios
           </p>
         </div>
         <div className="text-left sm:text-right">
-          <Figure value={data.score.overall} decimals={0} className="block text-figure font-semibold" />
+          <Figure value={data.score.overall} decimals={0} className="block text-figure" />
           {/* Um score NUNCA aparece sem o rótulo da persona que o produziu. */}
           <p className="figure mt-1 text-[0.75rem] uppercase tracking-[0.08em] text-ink-soft">
             de 100 · como {data.score.personaLabel}
           </p>
         </div>
       </header>
+
+      {data.narrative && <TenSecondTest narrative={data.narrative} />}
 
       <PersonaReadings
         readings={data.score.allPersonaOverall}
@@ -174,10 +196,12 @@ export function Report({ id }: { id: string }) {
 
       <footer className="mt-20 rule-t pt-6 text-[0.75rem] text-ink-faint">
         <p>
-          Rubrica v1.0.0 · auditado em {new Date(data.scanAt).toLocaleString('pt-BR')}. Esta nota mede o
-          GitHub como artefato profissional, não capacidade de engenharia.
+          Rubrica v1.0.0 · auditado em {new Date(data.scanAt).toLocaleString('pt-BR')}
+          {data.interpreterVersion ? ' · com análise semântica' : ' · avaliação determinística, sem análise semântica'}.
+          Esta nota mede o GitHub como artefato profissional, não capacidade de engenharia.
         </p>
       </footer>
-    </main>
+      </main>
+    </div>
   );
 }

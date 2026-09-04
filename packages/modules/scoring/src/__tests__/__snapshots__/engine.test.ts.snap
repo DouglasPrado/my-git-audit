@@ -3,23 +3,23 @@
 exports[`motor de pontuação > reproduz o golden do perfil de calibração 1`] = `
 {
   "categories": {
-    "CUR": 87.4,
-    "DIS": 60.5,
+    "CUR": 87.5,
+    "DIS": 68.4,
     "ENG": 43.2,
     "HYG": 25,
     "MNT": 70.7,
     "OSS": 34.1,
-    "POS": 68.6,
+    "POS": 71.4,
     "PRE": 75.3,
   },
-  "overall": 56.4,
+  "overall": 56.9,
   "personas": {
-    "freelancer": 65.8,
-    "general": 59.3,
-    "oss-maintainer": 53.8,
-    "recruiter": 64.3,
-    "senior-engineer": 56.4,
-    "staff-engineer": 58.6,
+    "freelancer": 66.9,
+    "general": 60.2,
+    "oss-maintainer": 54.3,
+    "recruiter": 65.3,
+    "senior-engineer": 56.9,
+    "staff-engineer": 59.3,
   },
   "repos": [
     "agent-sdk:Solid",

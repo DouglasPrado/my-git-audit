@@ -60,6 +60,32 @@ export const PORTFOLIO_ARCHIVE_HYGIENE: Grader = ({ facts }) => {
   );
 };
 
+/**
+ * Os fixados são a vitrine: são os seis que a pessoa escolheu mostrar. Cada um
+ * precisa se explicar sozinho — descrição na listagem e README ao abrir. Um
+ * fixado sem descrição custa mais que um repositório qualquer sem descrição,
+ * porque foi escolhido para ser visto.
+ */
+export const PINNED_SELF_EXPLANATORY: Grader = ({ facts }) => {
+  const p = facts.profile.pinned;
+  const id = cev(facts.profile.login, 'pinned.selfExplanatory');
+  if (p.length === 0) return result(0, 'Nenhum repositório público fixado', [id]);
+  const completos = p.filter((x) => x.hasDescription && x.hasReadme).length;
+  const semDesc = p.filter((x) => !x.hasDescription).map((x) => x.name);
+  const semReadme = p.filter((x) => !x.hasReadme).map((x) => x.name);
+  const faltas = [
+    semDesc.length ? `sem descrição: ${semDesc.join(', ')}` : '',
+    semReadme.length ? `sem README: ${semReadme.join(', ')}` : '',
+  ].filter(Boolean).join('; ');
+  return result(
+    completos / p.length,
+    completos === p.length
+      ? `Todos os ${p.length} fixados têm descrição e README`
+      : `${completos} de ${p.length} fixados se explicam sozinhos — ${faltas}`,
+    [id],
+  );
+};
+
 export const PORTFOLIO_TYPE_DIVERSITY: Grader = ({ facts }) => {
   const n = facts.portfolio.distinctProjectTypes;
   return result(

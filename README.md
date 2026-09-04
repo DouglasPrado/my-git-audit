@@ -47,7 +47,7 @@ trinta segundos discordaria. Essa diferença é o produto.
 ## Estado
 
 A **fatia vertical determinística funciona de ponta a ponta**: cole um perfil, o sistema coleta do
-GitHub, normaliza, avalia 47 regras, calcula a nota com trilha auditável e devolve recomendações
+GitHub, normaliza, avalia 51 regras, calcula a nota com trilha auditável e devolve recomendações
 priorizadas com ganho **calculado** por contrafactual.
 
 **Ainda não usa LLM.** Os cinco slots interpretativos caem em variante neutra de baixa confiança e a
@@ -97,7 +97,7 @@ reprovou uma escada da própria especificação (ver `LICENSE_RECOGNIZED` no cat
 | [`docs/data-model.md`](docs/data-model.md) | Entidades, imutabilidade de snapshot, gramática de `EvidenceId` |
 | [`docs/api.md`](docs/api.md) | Endpoints HTTP e contrato de eventos SSE |
 | [`docs/rubric/rubric-v1.md`](docs/rubric/rubric-v1.md) | **Documento central** — modelo de cálculo, slots, caps, personas, trilha de auditoria |
-| [`docs/rubric/rules-catalog-v1.md`](docs/rubric/rules-catalog-v1.md) | As 47 regras da v1, com risco de falso positivo e mitigação |
+| [`docs/rubric/rules-catalog-v1.md`](docs/rubric/rules-catalog-v1.md) | As 51 regras da v1, com risco de falso positivo e mitigação |
 | [`docs/adr/`](docs/adr/) | 13 decisões arquiteturais registradas |
 | [`docs/roadmap.md`](docs/roadmap.md) | Os 10 épicos, sequenciados |
 

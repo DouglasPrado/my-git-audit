@@ -79,6 +79,22 @@ export default tseslint.config(
   },
 
   {
+    /**
+     * A direção é insight → sinais → scoring. O motor de pontuação não conhece
+     * quem produziu o sinal, e o intérprete não conhece peso nem nota — é o que
+     * impede um prompt de "saber" quanto vale a resposta que ele devolve.
+     */
+    files: ['packages/modules/insight/src/**/*.ts'],
+    ignores: ['packages/modules/insight/src/__tests__/**'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        { patterns: [{ group: ['@audit/scoring', '@audit/reporting', '@audit/collection'], message: 'insight produz sinais; não conhece peso, nota nem coleta.' }] },
+      ],
+    },
+  },
+
+  {
     // O GitHub não contamina o domínio: cliente só no adaptador (ADR-0002).
     files: ['packages/modules/collection/src/**/*.ts'],
     ignores: ['packages/modules/collection/src/github/**'],

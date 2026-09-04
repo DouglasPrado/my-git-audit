@@ -39,6 +39,9 @@ export async function POST(request: Request) {
     facts: null,
     score: null,
     recommendations: null,
+    narrative: null,
+    signals: [],
+    interpreterVersion: null,
     error: null,
   });
 

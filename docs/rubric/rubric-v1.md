@@ -108,12 +108,13 @@ Oito categorias. Dentro de cada uma, os pesos de slot somam 100. **D** = determi
 
 | Slot | Peso | Regra | Tipo |
 | --- | ---: | --- | --- |
-| `POS.profileReadme` | 25 | `PROFILE_README_PRESENT` | D |
-| `POS.readmeStructure` | 15 | `PROFILE_README_STRUCTURE` | D |
+| `POS.profileReadme` | 22 | `PROFILE_README_PRESENT` | D |
+| `POS.readmeStructure` | 13 | `PROFILE_README_STRUCTURE` | D |
 | `POS.readmeClarity` | 20 | `PROFILE_README_SUBSTANCE` | L |
-| `POS.bio` | 10 | `PROFILE_BIO_PRESENT` | D |
+| `POS.bio` | 8 | `PROFILE_BIO_PRESENT` | D |
 | `POS.bioSpecificity` | 15 | `PROFILE_BIO_SPECIFICITY` | L |
-| `POS.coherence` | 15 | `PORTFOLIO_COHERENCE` | D |
+| `POS.coherence` | 12 | `PORTFOLIO_COHERENCE` | D |
+| `POS.profileRepoDescription` | 10 | `PROFILE_REPO_DESCRIPTION` | D |
 
 Peso de LLM: **35%**. `POS.coherence` é deliberadamente determinístico — índice de concentração
 (Herfindahl) sobre topics e linguagens dos repositórios selecionados. O modelo escreve a narrativa;
@@ -123,11 +124,17 @@ o índice dá a nota.
 
 | Slot | Peso | Regra | Tipo |
 | --- | ---: | --- | --- |
-| `CUR.pinnedUsed` | 20 | `PROFILE_PINNED_USED` | D |
-| `CUR.pinnedQuality` | 25 | `PINNED_BEST_WORK` | D |
-| `CUR.noiseRatio` | 20 | `PORTFOLIO_NOISE_RATIO` | D |
-| `CUR.archiveHygiene` | 15 | `PORTFOLIO_ARCHIVE_HYGIENE` | D |
-| `CUR.diversity` | 20 | `PORTFOLIO_TYPE_DIVERSITY` | D |
+| `CUR.pinnedUsed` | 15 | `PROFILE_PINNED_USED` | D |
+| `CUR.pinnedSelfExplanatory` | 25 | `PINNED_SELF_EXPLANATORY` | D |
+| `CUR.pinnedQuality` | 20 | `PINNED_BEST_WORK` | D |
+| `CUR.noiseRatio` | 15 | `PORTFOLIO_NOISE_RATIO` | D |
+| `CUR.archiveHygiene` | 10 | `PORTFOLIO_ARCHIVE_HYGIENE` | D |
+| `CUR.diversity` | 15 | `PORTFOLIO_TYPE_DIVERSITY` | D |
+
+`CUR.pinnedSelfExplanatory` é o slot de maior peso da categoria de propósito: os fixados são os
+seis que a pessoa **escolheu** mostrar. Um fixado sem descrição custa mais que um repositório
+qualquer sem descrição, porque foi selecionado para ser visto. A regra nomeia quais estão
+incompletos, e conta apenas os **públicos**.
 
 Peso de LLM: **0%**.
 
@@ -189,12 +196,19 @@ Peso de LLM: **0%**.
 
 | Slot | Peso | Regra | Tipo |
 | --- | ---: | --- | --- |
-| `DIS.repoDescription` | 30 | `REPO_DESCRIPTION` | D |
-| `DIS.repoTopics` | 30 | `REPO_TOPICS` | D |
-| `DIS.profileLinks` | 20 | `PROFILE_CONTACT_CHANNELS` | D |
-| `DIS.homepage` | 20 | `REPO_HOMEPAGE_URL` | D |
+| `DIS.repoDescription` | 25 | `REPO_DESCRIPTION` | D |
+| `DIS.repoTopics` | 25 | `REPO_TOPICS` | D |
+| `DIS.profileWebsite` | 12 | `PROFILE_WEBSITE` | D |
+| `DIS.profileSocial` | 13 | `PROFILE_SOCIAL` | D |
+| `DIS.profileEmail` | 10 | `PROFILE_EMAIL` | D |
+| `DIS.homepage` | 15 | `REPO_HOMEPAGE_URL` | D |
 
-Peso de LLM: **0%**. Quatro slots por exigência estrutural: **categoria com peso ≤ 5 no vetor de
+**Cada canal de contato pontua à parte, e isso não é detalhe.** Site e LinkedIn dizem coisas
+diferentes a quem lê: um mostra o que a pessoa faz, o outro permite chegar até ela. Somá-los num
+único "número de canais" esconde qual está faltando, e a recomendação vira genérica demais para
+ser acionável.
+
+Peso de LLM: **0%**. Seis slots — acima da exigência estrutural: **categoria com peso ≤ 5 no vetor de
 persona DEVE ter no mínimo 4 slots**, ou sua granularidade interna fica mais grossa que a precisão
 que a interface sugere.
 
@@ -609,5 +623,5 @@ fixados como conjunto selecionado. Os slots interpretativos (`readmeClarity`, `b
 
 ### v1.0.0 — não publicada
 
-Versão inicial. 8 categorias, 47 regras, 6 caps, 6 personas. Ainda não congelada: enquanto não
+Versão inicial. 8 categorias, 51 regras, 6 caps, 6 personas. Ainda não congelada: enquanto não
 houver implementação e um dry-run contra perfis reais, os pesos são hipótese, não medição.

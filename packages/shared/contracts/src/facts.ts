@@ -96,11 +96,17 @@ export interface ProfileFacts {
   location: string | null;
   company: string | null;
   followers: number;
-  socialAccounts: number;
+  /** Provedor e URL. Separado por provedor porque LinkedIn pontua à parte. */
+  socialAccounts: { provider: string; url: string }[];
+  /** Exige escopo `read:user` no token; sem ele vem null. Ver PROFILE_EMAIL. */
   email: string | null;
   profileReadme: DocFile | null;
   profileReadmeRepoExists: boolean;
+  /** Descrição do repositório de perfil — a vitrine antes do README. */
+  profileRepoDescription: string | null;
   pinnedCount: number;
+  /** Estado de cada fixado: é a vitrine, e é avaliada à parte dos demais. */
+  pinned: { name: string; hasDescription: boolean; hasReadme: boolean }[];
 }
 
 export interface PortfolioFacts {

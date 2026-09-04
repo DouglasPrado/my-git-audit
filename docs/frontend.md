@@ -5,34 +5,98 @@
 
 ---
 
-## 1. Biblioteca de componentes
+## 1. Sistema visual
+
+A linguagem visual vem do design system **resend**, empacotado como skill em [`design/`](../design)
+(`SKILL.md` + `references/DESIGN.md` + as faces em `design/fonts/`). Tudo o que a marca decide mora
+em [`apps/web/src/styles/theme.css`](../apps/web/src/styles/theme.css); nenhum componente carrega
+hexadecimal.
+
+**Tema único, escuro.** A skill declara `dark mode toggle: no` e a captura da homepage é chapa
+preta — não existe paleta clara da marca para servir, e inventar uma seria decidir por conta
+própria algo que a marca já decidiu. Não há bloco `prefers-color-scheme`; `color-scheme: dark` em
+`global.css` faz controle nativo, autofill e barra de rolagem acompanharem.
+
+**Os nomes semânticos sobreviveram à repintura.** `paper`, `ink`, `rule`, `credit`, `debit`,
+`signal` são vocabulário de DOMÍNIO — crédito e débito de um razão, não decoração. A marca trocou
+os valores, não os nomes, e por isso nenhum componente precisou aprender outra língua.
+
+| Papel | Token | Valor | De onde vem |
+| --- | --- | --- | --- |
+| Fundo / cartão / poço | `paper`, `paper-raised`, `paper-sunken` | `#000000`, `#101010`, `#1b1b1b` | paleta da skill |
+| Texto | `ink`, `ink-soft`, `ink-faint` | `#ffffff`, `#a0a0a0`, `#8f8f8f` | paleta da skill (8.0:1 e 6.5:1 sobre preto) |
+| Filete / divisor / controle | `rule`, `rule-strong`, `rule-edge` | `#212629`, `#323232`, `#505050` | paleta da skill |
+| Acento | `brand` | `#62ffb3` | marca |
+| Adquirido | `credit` | `#00c758` | `color-green-500` da paleta |
+| Bônus, projeção | `signal` | `#62ffb3` | marca |
+| Débito, teto | `debit` | `#ff6369` | **extensão** — Radix, o sistema que a resend usa |
+| Alerta | `warn` | `#ffc53d` | **extensão** — idem |
+| Manchete | `--font-display` | Domaine Display Narrow | `design/fonts/` |
+| Texto | `--font-text` | Inter variável 100–900 | `design/fonts/` |
+| Cifra | `--font-mono` | Commit Mono | `design/fonts/` |
+
+O acento é **restrito**: CTA, link, foco, estado ativo, bônus. Adquirido usa o verde fundo
+justamente porque preenche metade de um relatório — se ele fosse a menta, o acento deixaria de ser
+acento. As duas extensões estão marcadas como tal no `theme.css`, com o motivo: a paleta extraída
+não tem papel destrutivo nem de alerta que sobreviva a fundo preto (`#9c6b2e` dá 4.56:1).
+
+As faces são servidas do próprio domínio via `next/font/local` — sem Google Fonts, sem conexão de
+terceiro no caminho crítico. Domaine cobre latim acentuado mas **não** cobre `←` e `→`: seta é
+coisa de rótulo, e rótulo é Inter ou Commit Mono.
+
+---
+
+## 2. Biblioteca de componentes
 
 Os primitivos vêm de **`@gba/components`** (registry privado `npm.landing`): `Button`,
 `Input`, `Label`, `ToggleGroup`, `Card`, `Badge`, `Alert`, `Table`, `Collapsible`, `Tooltip`,
 `Spinner`. O que este produto escreve à mão é só o que não existe em biblioteca nenhuma — a
 `BalanceBar` e o `Ledger`.
 
-Duas decisões de integração que custaram tempo e precisam estar escritas:
+Três decisões de integração que custaram tempo e precisam estar escritas:
 
-**O CSS compilado da biblioteca NÃO é importado.** `@gba/components/style.css` é um Tailwind já
-construído, com preflight e declaração própria de camadas; trazê-lo para dentro deste build
-reordena a cascata e os utilitários daqui param de valer — o sintoma é título encolhido e fundo
-branco, com os utilitários presentes no CSS servido e sem nenhum efeito. O caminho correto para um
-consumidor Tailwind v4 é escanear o fonte:
+**Não importamos `@gba/components/style.css` — mas a folha dela ESTÁ na página assim mesmo.**
+Não importar era a decisão; ela não é suficiente. O barrel `dist/index.mjs` carrega a folha
+compilada dentro do próprio JavaScript e a injeta num `<style>` em tempo de execução. Importar
+qualquer componente traz o tema dela junto, sem passar por bundler, config ou import de CSS.
+Confira no navegador:
+
+```js
+getComputedStyle(document.documentElement).getPropertyValue('--brand-primary'); // '#293241'
+```
+
+Esse valor não existe em lugar nenhum deste repositório. Duas consequências, as duas já mordiram:
+
+1. **Os tokens dela vencem os nossos.** A `<style>` injetada entra depois do nosso `<link>`, com a
+   mesma especificidade (`:root`). Sem defesa, `--primary`, `--card`, `--muted-foreground`,
+   `--radius-xs` e companhia saem no azul-ardósia da marca dela. A defesa está em
+   `styles/theme.css`, num bloco `:root:root` — 0,2,0 contra 0,1,0 ganha por especificidade e
+   portanto **independe da ordem de injeção**, que não controlamos. Ao adicionar um token novo ao
+   vocabulário shadcn, adicione-o também lá.
+
+2. **Uma variante nossa perde para uma base delas.** Se a folha injetada declara `.grid-cols-2` e
+   **não** declara `.lg:grid-cols-6`, a nossa `lg:grid-cols-6` — que está na folha anterior — perde,
+   e a grade fica em duas colunas mesmo a 1920px. O mesmo aconteceu com `pt-16 sm:pt-24`. Quando um
+   par base+variante precisar de sobreposição, use **valor arbitrário** (`grid-cols-[repeat(auto-fit,minmax(9rem,1fr))]`,
+   `pt-[clamp(4rem,8vw,6rem)]`): a biblioteca nunca emite essas classes, e a cascata volta a ser
+   nossa. Para conflito no MESMO elemento não há problema — o `cn` dela é `twMerge` e resolve antes
+   de renderizar (é assim que a `RepoTable` desliga o `even:bg-muted/30` do primitivo).
+
+Nada disso dispensa o `@source`, que continua necessário para que as classes usadas pela biblioteca
+existam resolvidas contra os nossos tokens:
 
 ```css
 @source '../../node_modules/@gba/components/dist/index.mjs';
 ```
 
-Assim as classes que a biblioteca usa (`bg-primary`, `border-input`) são geradas por **este** build
-e resolvem contra os tokens do razão. Uma folha, uma cascata. Ao mudar esse `@source`, apague
-`.next` — o Tailwind guarda a configuração de scan em cache e a mudança não pega sozinha.
+Ao mudar esse `@source`, apague `.next` — o Tailwind guarda a configuração de scan em cache e a
+mudança não pega sozinha.
 
 **`@theme` NÃO funciona dentro de `@media`.** É construção de tempo de build: aninhado numa media
-query ele é achatado e o último bloco vence incondicionalmente, apagando a paleta clara do arquivo
-servido. O tema escuro sobrescreve as variáveis em `:root` dentro da media query, como CSS comum.
-A ponte para o vocabulário do shadcn usa `@theme inline` justamente para apontar para essas
-variáveis em vez de congelar valores.
+query ele é achatado e o último bloco vence incondicionalmente, apagando do arquivo servido a
+paleta que veio antes. Hoje isso não aparece — o tema é único e escuro, e não há media query de
+cor — mas a ponte para o vocabulário do shadcn continua usando `@theme inline` justamente para
+apontar para as variáveis em vez de congelar valores.
 
 **Fronteira de cliente.** O pacote é um barrel único que chama `createContext`; importar qualquer
 coisa dele num Server Component quebra o render. `components/ui.ts` reexporta os primitivos com
@@ -40,7 +104,7 @@ coisa dele num Server Component quebra o render. `components/ui.ts` reexporta os
 
 ---
 
-## 2. Regras herdadas
+## 3. Regras herdadas
 
 - `app/**/page.tsx` (e `layout`, `error`, `loading`) **não contém HTML** — compõe uma tela de
   `features/<f>/screens/`.
@@ -52,18 +116,18 @@ coisa dele num Server Component quebra o render. `components/ui.ts` reexporta os
 
 ---
 
-## 3. Regras próprias
+## 4. Regras próprias
 
 Estas não são preferências de design. Vêm do modelo de pontuação e violá-las torna a interface
 mentirosa.
 
-### 3.1 Score nunca aparece sem persona
+### 4.1 Score nunca aparece sem persona
 
 Um número sozinho não significa nada neste produto: 74 sob `recruiter` e 61 sob `staff-engineer`
 são a mesma avaliação. Todo componente que renderiza nota **DEVE** exibir o rótulo da persona junto,
 no mesmo bloco visual.
 
-### 3.2 Confiança é visível
+### 4.2 Confiança é visível
 
 Categoria cuja fatia de baixa confiança (`confidenceMix.low`) passar de ~30% do denominador **DEVE**
 exibir marcador de *parcialmente interpretado*.
@@ -71,7 +135,7 @@ exibir marcador de *parcialmente interpretado*.
 Sinal derivado de LLM **NUNCA DEVE** ter o mesmo peso visual que `licenseInfo.spdxId`. Um é
 interpretação; o outro é fato verificado por casamento de conteúdo.
 
-### 3.3 Toda afirmação é clicável até a evidência
+### 4.3 Toda afirmação é clicável até a evidência
 
 Nenhum achado é exibido sem caminho para sua evidência: arquivo, linha, trecho e permalink fixado no
 commit escaneado.
@@ -85,7 +149,7 @@ README.md:183
 Impacto: médio · Esforço: <5 min · Ganho: +2
 ```
 
-### 3.4 Nota de repositório vem com contexto
+### 4.4 Nota de repositório vem com contexto
 
 Nota por repositório **DEVE** aparecer sempre ao lado do `ProjectType` detectado, e **DEVERIA** usar
 faixa qualitativa (`Strong` / `Solid` / `Thin`) em vez de inteiro nu. O perfil pode carregar valor
@@ -93,9 +157,9 @@ preciso porque agrega; um repositório pequeno, não.
 
 ---
 
-## 4. Telas
+## 5. Telas
 
-### 4.1 Entrada
+### 5.1 Entrada
 
 Campo de URL, seletor de persona, botão. O seletor **DEVE** explicar o que muda: *"altera o peso das
 categorias, não os fatos coletados"*.
@@ -103,7 +167,7 @@ categorias, não os fatos coletados"*.
 Erros com ação clara, não código: organização não suportada, conta inexistente, conta sem
 repositório público.
 
-### 4.2 Progresso
+### 5.2 Progresso
 
 Consome o SSE de [`api.md`](api.md). Mostra etapa e contagem — *"Analisando 4 de 6 repositórios"* —
 nunca uma barra falsa.
@@ -111,7 +175,7 @@ nunca uma barra falsa.
 Falha em análise semântica **NÃO DEVE** virar tela de erro. Vira aviso de relatório parcial, com o
 que ficou por avaliar.
 
-### 4.3 Relatório
+### 5.3 Relatório
 
 ```
 ┌────────────────────────────────────────────────────┐
@@ -134,7 +198,7 @@ Um recrutador leria este perfil como 74.
 Essa última linha sai de graça — as categorias são invariantes entre personas, então
 `allPersonaOverall` já vem calculado. É uma feature melhor que o próprio seletor de persona.
 
-### 4.4 Trilha de auditoria
+### 5.4 Trilha de auditoria
 
 Clicar numa categoria abre a decomposição. Barra segmentada de 100 unidades — adquirido, perdido,
 bônus, penalidade, cap — mais a lista assinada:
@@ -157,7 +221,7 @@ Cap é item de primeira classe, com o valor que destruiu:
 Caps ativos mas não limitantes aparecem como *"também ativo, não limitante"*. Escondê-los faz o
 usuário consertar o item errado, não ver a nota mover e parar de confiar na ferramenta.
 
-### 4.5 Recomendações
+### 5.5 Recomendações
 
 Três visões: **Quick wins** (<10 min), **Maior impacto**, **Estrutural**.
 
@@ -166,7 +230,7 @@ não são aditivos por causa dos caps e do denominador.
 
 > Fazendo estas três coisas: **78 → 89**
 
-### 4.6 Explorador de repositórios
+### 5.6 Explorador de repositórios
 
 Lista com nota, faixa e tipo detectado. Ao abrir: pontos fortes, achados com evidência, sinais de
 engenharia, recomendações.
@@ -174,7 +238,7 @@ engenharia, recomendações.
 Repositório excluído por materialidade aparece **listado como excluído, com o motivo** — nunca com
 nota baixa. É a diferença entre *"não avaliamos, é pequeno demais"* e *"seu projeto é ruim"*.
 
-### 4.7 Comparação
+### 5.7 Comparação
 
 ```
 04 set        11 set
@@ -191,7 +255,7 @@ texto nem de nota — é comparação de fatos.
 
 ---
 
-## 5. Tom
+## 6. Tom
 
 O produto acusa problemas no trabalho público de uma pessoa real, que provavelmente está procurando
 emprego. Um falso positivo confiante custa mais do que dez achados verdadeiros ganham.

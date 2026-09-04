@@ -245,7 +245,7 @@ O produto está funcional quando consegue, de ponta a ponta:
 - [ ] Coletar perfil e selecionar repositórios de forma determinística.
 - [ ] Resolver o README **case-insensitive** a partir da árvore, jamais por caminho fixo.
 - [ ] Produzir evidência com proveniência (`path`, linha, snippet, permalink no commit escaneado).
-- [ ] Avaliar as 47 regras da v1 do catálogo.
+- [ ] Avaliar as 51 regras da v1 do catálogo.
 - [ ] Calcular a nota deterministicamente e exibir a trilha de auditoria de cada categoria.
 - [ ] Gerar recomendações ordenadas, com ganho por contrafactual e ganho conjunto do top 3.
 - [ ] Persistir o scan de forma imutável e reexecutar um scan antigo por replay puro.

@@ -352,7 +352,7 @@
  "profile": {
   "bio": "Software engineer building developer tools, AI infrastructure and distributed systems.",
   "company": null,
-  "email": null,
+  "email": "octo@example.com",
   "followers": 80,
   "location": "Somewhere",
   "login": "octo-example",
@@ -364,8 +364,46 @@
    "text": "# octo-example\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n## lorem ipsum dolor\n\nlorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor\n\n[lorem ipsum](./docs/0.md)\n[lorem ipsum](./docs/1.md)\n[lorem ipsum](./docs/2.md)\n[lorem ipsum](./docs/3.md)\n[lorem ipsum](./docs/4.md)"
   },
   "profileReadmeRepoExists": true,
-  "socialAccounts": 1,
-  "websiteUrl": "https://example.com"
+  "socialAccounts": [
+   {
+    "provider": "LINKEDIN",
+    "url": "https://www.linkedin.com/in/octo-example"
+   }
+  ],
+  "websiteUrl": "https://example.com",
+  "profileRepoDescription": "Software engineer building developer tools, AI infrastructure and distributed systems.",
+  "pinned": [
+   {
+    "name": "spec-kit",
+    "hasDescription": true,
+    "hasReadme": true
+   },
+   {
+    "name": "pane",
+    "hasDescription": true,
+    "hasReadme": true
+   },
+   {
+    "name": "clipview",
+    "hasDescription": true,
+    "hasReadme": true
+   },
+   {
+    "name": "match-engine",
+    "hasDescription": true,
+    "hasReadme": true
+   },
+   {
+    "name": "vault",
+    "hasDescription": true,
+    "hasReadme": true
+   },
+   {
+    "name": "agent-sdk",
+    "hasDescription": false,
+    "hasReadme": true
+   }
+  ]
  },
  "repositories": [
   {

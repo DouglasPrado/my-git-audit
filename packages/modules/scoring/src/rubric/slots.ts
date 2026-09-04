@@ -5,19 +5,21 @@ const neutral = (grade: number, reason: string) => ({ kind: 'neutral' as const, 
 
 export const slots: Slot[] = [
   // ---- Positioning ------------------------------------------------------
-  { id: 'POS.profileReadme', label: 'Profile README presente', category: 'POS', scope: 'profile', weight: 25, universal: true, variants: [{ when: 'always', body: rule('PROFILE_README_PRESENT') }] },
-  { id: 'POS.readmeStructure', label: 'Profile README estruturado', category: 'POS', scope: 'profile', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PROFILE_README_STRUCTURE') }] },
+  { id: 'POS.profileReadme', label: 'Profile README presente', category: 'POS', scope: 'profile', weight: 22, universal: true, variants: [{ when: 'always', body: rule('PROFILE_README_PRESENT') }] },
+  { id: 'POS.readmeStructure', label: 'Profile README estruturado', category: 'POS', scope: 'profile', weight: 13, universal: true, variants: [{ when: 'always', body: rule('PROFILE_README_STRUCTURE') }] },
   { id: 'POS.readmeClarity', label: 'Profile README comunica a especialidade', category: 'POS', scope: 'profile', weight: 20, universal: true, interpretive: true, variants: [{ when: 'always', body: rule('PROFILE_README_SUBSTANCE') }] },
-  { id: 'POS.bio', label: 'Bio preenchida', category: 'POS', scope: 'profile', weight: 10, universal: true, variants: [{ when: 'always', body: rule('PROFILE_BIO_PRESENT') }] },
+  { id: 'POS.bio', label: 'Bio preenchida', category: 'POS', scope: 'profile', weight: 8, universal: true, variants: [{ when: 'always', body: rule('PROFILE_BIO_PRESENT') }] },
   { id: 'POS.bioSpecificity', label: 'Bio específica', category: 'POS', scope: 'profile', weight: 15, universal: true, interpretive: true, variants: [{ when: 'always', body: rule('PROFILE_BIO_SPECIFICITY') }] },
-  { id: 'POS.coherence', label: 'Portfólio com narrativa coerente', category: 'POS', scope: 'portfolio', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_COHERENCE') }] },
+  { id: 'POS.coherence', label: 'Portfólio com narrativa coerente', category: 'POS', scope: 'portfolio', weight: 12, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_COHERENCE') }] },
+  { id: 'POS.profileRepoDescription', label: 'Repositório de perfil descrito', category: 'POS', scope: 'profile', weight: 10, universal: true, variants: [{ when: 'always', body: rule('PROFILE_REPO_DESCRIPTION') }] },
 
   // ---- Portfolio Curation -----------------------------------------------
-  { id: 'CUR.pinnedUsed', label: 'Repositórios fixados em uso', category: 'CUR', scope: 'portfolio', weight: 20, universal: true, variants: [{ when: 'always', body: rule('PROFILE_PINNED_USED') }] },
-  { id: 'CUR.pinnedQuality', label: 'Fixados representam o melhor trabalho', category: 'CUR', scope: 'portfolio', weight: 25, universal: true, variants: [{ when: 'always', body: rule('PINNED_BEST_WORK') }] },
-  { id: 'CUR.noiseRatio', label: 'Portfólio sem ruído', category: 'CUR', scope: 'portfolio', weight: 20, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_NOISE_RATIO') }] },
-  { id: 'CUR.archiveHygiene', label: 'Projetos parados estão arquivados', category: 'CUR', scope: 'portfolio', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_ARCHIVE_HYGIENE') }] },
-  { id: 'CUR.diversity', label: 'Variedade de tipos de projeto', category: 'CUR', scope: 'portfolio', weight: 20, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_TYPE_DIVERSITY') }] },
+  { id: 'CUR.pinnedUsed', label: 'Repositórios fixados em uso', category: 'CUR', scope: 'portfolio', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PROFILE_PINNED_USED') }] },
+  { id: 'CUR.pinnedSelfExplanatory', label: 'Fixados se explicam sozinhos', category: 'CUR', scope: 'portfolio', weight: 25, universal: true, variants: [{ when: 'always', body: rule('PINNED_SELF_EXPLANATORY') }] },
+  { id: 'CUR.pinnedQuality', label: 'Fixados representam o melhor trabalho', category: 'CUR', scope: 'portfolio', weight: 20, universal: true, variants: [{ when: 'always', body: rule('PINNED_BEST_WORK') }] },
+  { id: 'CUR.noiseRatio', label: 'Portfólio sem ruído', category: 'CUR', scope: 'portfolio', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_NOISE_RATIO') }] },
+  { id: 'CUR.archiveHygiene', label: 'Projetos parados estão arquivados', category: 'CUR', scope: 'portfolio', weight: 10, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_ARCHIVE_HYGIENE') }] },
+  { id: 'CUR.diversity', label: 'Variedade de tipos de projeto', category: 'CUR', scope: 'portfolio', weight: 15, universal: true, variants: [{ when: 'always', body: rule('PORTFOLIO_TYPE_DIVERSITY') }] },
 
   // ---- Project Presentation ---------------------------------------------
   { id: 'PRE.readme', label: 'README presente', category: 'PRE', scope: 'repo-agg', weight: 30, universal: true, variants: [{ when: 'always', body: rule('REPO_README_PRESENT') }] },
@@ -85,8 +87,10 @@ export const slots: Slot[] = [
   { id: 'HYG.authorship', label: 'Autoria dos commits', category: 'HYG', scope: 'repo-agg', weight: 15, universal: true, variants: [{ when: 'always', body: rule('COMMIT_AUTHORSHIP') }] },
 
   // ---- Discoverability ----------------------------------------------------
-  { id: 'DIS.repoDescription', label: 'Descrição do repositório', category: 'DIS', scope: 'repo-agg', weight: 30, universal: true, variants: [{ when: 'always', body: rule('REPO_DESCRIPTION') }] },
-  { id: 'DIS.repoTopics', label: 'Topics', category: 'DIS', scope: 'repo-agg', weight: 30, universal: true, variants: [{ when: 'always', body: rule('REPO_TOPICS') }] },
-  { id: 'DIS.profileLinks', label: 'Canais de contato', category: 'DIS', scope: 'profile', weight: 20, universal: true, variants: [{ when: 'always', body: rule('PROFILE_CONTACT_CHANNELS') }] },
-  { id: 'DIS.homepage', label: 'Homepage do projeto', category: 'DIS', scope: 'repo-agg', weight: 20, universal: true, variants: [{ when: 'always', body: rule('REPO_HOMEPAGE_URL') }] },
+  { id: 'DIS.repoDescription', label: 'Descrição do repositório', category: 'DIS', scope: 'repo-agg', weight: 25, universal: true, variants: [{ when: 'always', body: rule('REPO_DESCRIPTION') }] },
+  { id: 'DIS.repoTopics', label: 'Topics', category: 'DIS', scope: 'repo-agg', weight: 25, universal: true, variants: [{ when: 'always', body: rule('REPO_TOPICS') }] },
+  { id: 'DIS.profileWebsite', label: 'Site no perfil', category: 'DIS', scope: 'profile', weight: 12, universal: true, variants: [{ when: 'always', body: rule('PROFILE_WEBSITE') }] },
+  { id: 'DIS.profileSocial', label: 'LinkedIn no perfil', category: 'DIS', scope: 'profile', weight: 13, universal: true, variants: [{ when: 'always', body: rule('PROFILE_SOCIAL') }] },
+  { id: 'DIS.profileEmail', label: 'E-mail público', category: 'DIS', scope: 'profile', weight: 10, universal: true, variants: [{ when: 'always', body: rule('PROFILE_EMAIL') }] },
+  { id: 'DIS.homepage', label: 'Homepage do projeto', category: 'DIS', scope: 'repo-agg', weight: 15, universal: true, variants: [{ when: 'always', body: rule('REPO_HOMEPAGE_URL') }] },
 ];

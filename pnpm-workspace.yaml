@@ -17,3 +17,6 @@ allowBuilds:
   sharp: true
   '@tailwindcss/oxide': true
   unrs-resolver: true
+  # Vem junto do @gba/ai-harness (memória e RAG em SQLite). Este produto não usa
+  # nenhum dos dois — a chamada é sem estado —, mas a dependência é instalada.
+  better-sqlite3: true

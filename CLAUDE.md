@@ -27,7 +27,7 @@ confiável, testável, seguro, observável e adequado para produção.
 ## 2. Estado atual do repositório
 
 A **fatia vertical determinística está implementada e roda**: coleta do GitHub, normalização,
-47 regras, motor de pontuação, recomendações com contrafactual e relatório. **Sem LLM** — os slots
+51 regras, motor de pontuação, recomendações com contrafactual e relatório. **Sem LLM** — os slots
 interpretativos caem em variante neutra de baixa confiança, por projeto.
 
 Antes de mexer na nota, leia [`docs/rubric/rubric-v1.md`](docs/rubric/rubric-v1.md) inteiro. É o
