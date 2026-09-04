@@ -38,10 +38,12 @@ export function BalanceBar({
                   animate && 'bar-grow',
                   s.kind === 'earned' && 'bg-credit',
                   s.kind === 'forgone' && 'hatch',
-                  // Âmbar, não `signal`: nesta paleta o token de sinal é o mesmo
-                  // verde da marca, e o bônus ficava indistinguível do adquirido.
-                  // Cor aqui carrega significado — some o significado, some a cor.
-                  s.kind === 'bonus' && 'bg-warn',
+                  // Branco, não âmbar: o bônus precisa MESMO se separar do
+                  // adquirido, mas âmbar é a cor de cuidado desta tela — é o
+                  // marcador de "parcialmente interpretado", a dois centímetros
+                  // daqui. Bônus não é cuidado. Branco é mais claro que a menta,
+                  // separa igual, e não empresta significado de outra coisa.
+                  s.kind === 'bonus' && 'bg-bonus',
                   s.kind === 'penalty' && 'bg-debit',
                   s.kind === 'capped' && 'bg-debit-soft',
                 )}

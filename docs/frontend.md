@@ -26,19 +26,26 @@ os valores, não os nomes, e por isso nenhum componente precisou aprender outra 
 | Fundo / cartão / poço | `paper`, `paper-raised`, `paper-sunken` | `#000000`, `#101010`, `#1b1b1b` | paleta da skill |
 | Texto | `ink`, `ink-soft`, `ink-faint` | `#ffffff`, `#a0a0a0`, `#8f8f8f` | paleta da skill (8.0:1 e 6.5:1 sobre preto) |
 | Filete / divisor / controle | `rule`, `rule-strong`, `rule-edge` | `#212629`, `#323232`, `#505050` | paleta da skill |
-| Acento | `brand` | `#62ffb3` | marca |
-| Adquirido | `credit` | `#00c758` | `color-green-500` da paleta |
-| Bônus, projeção | `signal` | `#62ffb3` | marca |
+| Acento, adquirido | `brand`, `credit` | `#62ffb3` | marca |
+| Bônus | `bonus` | `#ffffff` | neutro da marca |
 | Débito, teto | `debit` | `#ff6369` | **extensão** — Radix, o sistema que a resend usa |
-| Alerta | `warn` | `#ffc53d` | **extensão** — idem |
+| Confiança | `warn` | `#ffc53d` | **extensão** — idem |
 | Manchete | `--font-display` | Domaine Display Narrow | `design/fonts/` |
 | Texto | `--font-text` | Inter variável 100–900 | `design/fonts/` |
 | Cifra | `--font-mono` | Commit Mono | `design/fonts/` |
 
-O acento é **restrito**: CTA, link, foco, estado ativo, bônus. Adquirido usa o verde fundo
-justamente porque preenche metade de um relatório — se ele fosse a menta, o acento deixaria de ser
-acento. As duas extensões estão marcadas como tal no `theme.css`, com o motivo: a paleta extraída
-não tem papel destrutivo nem de alerta que sobreviva a fundo preto (`#9c6b2e` dá 4.56:1).
+**Um matiz vivo.** A `BalanceBar` — o elemento-assinatura — tem cinco estados e é onde a paleta
+racha se alguém deixar. A regra: adquirido é a menta (é a quantidade boa, e o acento pertence a
+ela), bônus é branco puro (mais claro que a menta, lê-se "acima da linha"), perdido é hachura
+neutra, teto e penalidade são vermelho. Um matiz vivo mais o vermelho, que é inevitável — não
+existe perda em menta.
+
+**Âmbar é só confiança.** `warn` tem um uso e um só: o marcador de *parcialmente interpretado*.
+Bônus já foi âmbar para separá-lo do adquirido; separava, mas dizia a coisa errada — âmbar é
+cuidado nesta tela, e bônus é ganho. Se um estado novo precisar de cor, ele NÃO herda o âmbar.
+
+As duas extensões estão marcadas como tal no `theme.css`, com o motivo: a paleta extraída não tem
+papel destrutivo nem de alerta que sobreviva a fundo preto (`#9c6b2e` dá 4.56:1).
 
 As faces são servidas do próprio domínio via `next/font/local` — sem Google Fonts, sem conexão de
 terceiro no caminho crítico. Domaine cobre latim acentuado mas **não** cobre `←` e `→`: seta é
