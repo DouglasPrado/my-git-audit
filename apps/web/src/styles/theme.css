@@ -46,24 +46,33 @@
   --color-brand-soft: color-mix(in oklab, #62ffb3 12%, #000000);
 
   /* --- Cor: sinal contábil ------------------------------------------------
-   * `credit` preenche metade da tela num relatório: se ele fosse a menta, o
-   * acento deixaria de ser acento — a skill reserva #62ffb3 a CTA, link, foco e
-   * estado ativo, e uma barra de 100 unidades não é nenhum dos quatro. Então
-   * adquirido usa o verde fundo da paleta (`color-green-500`) e a menta fica com
-   * o que é raro: `signal` — bônus e projeção — mais os controles. Mesma
-   * família, duas leituras, e o pop continua valendo alguma coisa.
+   * Uma paleta de acento único não comporta quatro matizes disputando a mesma
+   * barra. Este bloco tem UM matiz vivo — a menta — mais o vermelho, que é
+   * inevitável (não existe perda em menta), mais neutros.
+   *
+   *   adquirido  menta        é a quantidade boa, e o acento pertence a ela
+   *   bônus      branco puro  mais claro que a menta: lê-se "acima da linha"
+   *   perdido    hachura      ausência é vazado, não colorido
+   *   teto/pena  vermelho     perda
+   *
+   * O bônus foi âmbar por um tempo, para separá-lo do adquirido. Separava, mas
+   * dizia a coisa errada: nesta interface âmbar é CUIDADO — é o marcador de
+   * "parcialmente interpretado" logo acima, na mesma linha. Bônus não é
+   * cuidado, é ganho extra. Branco separa igual e não mente.
+   *
+   * `--color-warn` sobra, então, para um uso só: confiança. É o que dá sentido
+   * a ele ser a única cor de alerta da tela.
    *
    * EXTENSÃO DECLARADA: a paleta extraída não tem papel destrutivo nem alerta
    * que sobreviva a fundo preto (#9c6b2e dá 4.56:1). Os dois valores abaixo
    * vêm do Radix, que é o sistema que a própria resend usa — os tokens dela
    * referenciam `--red-a8`, `--orange-a8`, `--green-a8`. É extensão do sistema,
    * não cor inventada, e ambos passam AA sobre #000 (7.24:1 e 13.4:1). */
-  --color-credit: #00c758;
-  --color-credit-soft: color-mix(in oklab, #00c758 14%, #000000);
+  --color-credit: #62ffb3;
+  --color-credit-soft: color-mix(in oklab, #62ffb3 14%, #000000);
+  --color-bonus: #ffffff;
   --color-debit: #ff6369;
   --color-debit-soft: color-mix(in oklab, #ff6369 16%, #000000);
-  --color-signal: #62ffb3;
-  --color-signal-soft: color-mix(in oklab, #62ffb3 12%, #000000);
   --color-warn: #ffc53d;
 
   /* --- Tipografia ---------------------------------------------------------

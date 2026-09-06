@@ -99,7 +99,7 @@ export function Ledger({ rows, animate = true }: { rows: CategoryRow[]; animate?
                         className={cn(
                           'text-right',
                           c.points >= 0 ? 'text-credit' : 'text-debit',
-                          c.kind === 'bonus' && 'text-warn',
+                          c.kind === 'bonus' && 'text-bonus',
                         )}
                       >
                         <Figure value={c.points} decimals={1} sign />

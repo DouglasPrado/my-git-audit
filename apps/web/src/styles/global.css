@@ -166,11 +166,16 @@
       inset: 0;
       padding: 1px;
       border-radius: inherit;
+      /* CUIDADO: uma `var()` inexistente aqui não degrada — invalida o
+         `conic-gradient` inteiro, a declaração `background` cai, e o contorno
+         some sem erro nenhum no console. Foi o que aconteceu quando
+         `--color-signal` deixou de existir. Ao mexer num token, `grep` por ele
+         no CSS antes. */
       background: conic-gradient(
         from var(--disco-angle),
         transparent 0deg 190deg,
-        var(--color-signal) 255deg,
-        var(--color-brand) 300deg,
+        var(--color-brand) 255deg,
+        var(--color-bonus) 300deg,
         transparent 350deg
       );
       -webkit-mask:

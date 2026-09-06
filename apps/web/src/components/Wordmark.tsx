@@ -15,7 +15,7 @@ export function Wordmark() {
     >
       <span
         aria-hidden
-        className="grid size-5 place-items-center rounded-xs bg-linear-to-br from-brand to-signal shadow-hairline transition-transform duration-(--duration-fast) ease-(--ease-out-soft) group-hover:scale-105"
+        className="grid size-5 place-items-center rounded-xs bg-brand shadow-hairline transition-transform duration-(--duration-fast) ease-(--ease-out-soft) group-hover:scale-105"
       >
         <span className="size-1.5 rounded-full bg-brand-ink" />
       </span>
